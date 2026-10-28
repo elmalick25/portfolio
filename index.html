@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio professionnel d'El Hadji Malick SY — Étudiant en Licence 3 Informatique (Génie Logiciel) à l'UIDT de Thiès. Développement Full Stack (Java, Spring Boot, Python/Django, React, Angular), Intelligence Artificielle & Cybersécurité.">
+  <title>El Hadji Malick SY | Portfolio — Génie Logiciel, Full Stack, IA & Cybersécurité</title>
+
+  <!-- Google Fonts : Plus Jakarta Sans & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+  <!-- Devicon (Icônes officielles des langages & frameworks) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <!-- Feuille de style du Portfolio -->
+  <link rel="stylesheet" href="css/portfolio.css">
+</head>
+
+<body>
+
+  <!-- ==================== BARRE DE NAVIGATION ==================== -->
+  <header class="navbar-wrapper sticky-top" id="header">
+    <nav class="container navbar-custom d-flex align-items-center justify-content-between">
+      <a href="#accueil" class="brand-logo text-decoration-none">
+        El Hadji Malick<span class="brand-dot">.</span>
+      </a>
+
+      <button class="mobile-menu-btn d-lg-none" id="mobileMenuBtn" aria-label="Menu de navigation">
+        <i class="bi bi-list"></i>
+      </button>
+
+      <ul class="nav-links list-unstyled d-flex align-items-center mb-0" id="navLinks">
+        <li><a href="#accueil" class="nav-link-item active">Accueil</a></li>
+        <li><a href="#a-propos" class="nav-link-item">À propos</a></li>
+        <li><a href="#competences" class="nav-link-item">Compétences</a></li>
+        <li><a href="#projets" class="nav-link-item">Projets</a></li>
+        <li><a href="#contact" class="nav-link-item nav-btn-contact">Contact</a></li>
+        <li><a href="#parcours" class="nav-link-item">Parcours</a></li>
+        <li><a href="#certifications" class="nav-link-item">Certifications</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ==================== 1. SECTION HERO ==================== -->
+    <section id="accueil" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center gy-5">
+          <!-- Colonne texte -->
+          <div class="col-lg-7">
+            <div class="hero-badge-pill mb-3">
+              Bienvenue sur mon portfolio
+            </div>
+            <h1 class="hero-title mb-3">
+              Bonjour, je suis<br>
+              <span class="text-gradient-purple">El Hadji Malick SY</span>
+            </h1>
+            <h2 class="hero-subtitle mb-3">
+              Étudiant en L3 Génie Logiciel | Full Stack, IA &amp; Cybersécurité
+            </h2>
+            <p class="hero-description mb-4">
+              Étudiant en Licence 3 Informatique (option Génie Logiciel) à l’Université Iba Der Thiam de Thiès. Je
+              conçois des applications web Full Stack modernes, des architectures backend sécurisées et des solutions
+              intégrant l’intelligence artificielle temps réel.
+            </p>
+            <div class="d-flex flex-wrap gap-3 align-items-center">
+              <a href="#projets" class="btn-purple-primary">
+                <i class="bi bi-grid-fill me-2"></i>Découvrir mes projets
+              </a>
+              <a href="projet-cv/index.html" target="_blank" class="btn-purple-outline">
+                <i class="bi bi-file-earmark-person me-2"></i>Voir mon CV
+              </a>
+              <a href="https://github.com/elmalick25" target="_blank" rel="noopener noreferrer" class="btn-icon-circle"
+                aria-label="GitHub">
+                <i class="bi bi-github"></i>
+              </a>
+              <a href="https://wa.me/221780117156" target="_blank" rel="noopener noreferrer" class="btn-icon-circle"
+                aria-label="WhatsApp">
+                <i class="bi bi-whatsapp"></i>
+              </a>
+              <a href="mailto:ehmalick.sy1@univ-thies.sn" class="btn-icon-circle" aria-label="Email">
+                <i class="bi bi-envelope-fill"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Colonne photo -->
+          <div class="col-lg-5 text-center">
+            <div class="hero-avatar-wrapper mx-auto">
+              <div class="hero-avatar-ring">
+                <img src="images/unnamed.jpg" alt="Photo de profil d'El Hadji Malick SY" class="hero-avatar-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 2. SECTION À PROPOS ==================== -->
+    <section id="a-propos" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow">DÉCOUVREZ MON PROFIL</span>
+          <h2 class="section-title">À propos de moi</h2>
+          <div class="section-divider mx-auto"></div>
+        </div>
+
+        <div class="row gy-5 align-items-start">
+          <!-- Texte de présentation à gauche -->
+          <div class="col-lg-6">
+            <h3 class="about-heading mb-4">
+              Développement Full Stack, intelligence artificielle et solutions logicielles modernes
+            </h3>
+            <p class="about-text">
+              Je suis <strong>El Hadji Malick SY</strong>, étudiant en <strong>Licence 3 Informatique (option Génie
+                Logiciel)</strong> à l'Université Iba Der Thiam de Thiès (UIDT). Passionné par l'ingénierie logicielle,
+              la cybersécurité et l'intelligence artificielle, je conçois des applications complètes et performantes, de
+              la modélisation des données jusqu'à l'expérience utilisateur.
+            </p>
+            <p class="about-text">
+              Mon parcours académique et mes projets m'ont permis de développer une solide maîtrise de <strong>Java,
+                Spring Boot, Python (Django REST), React 19, Angular et PostgreSQL / MySQL</strong>. Je porte une
+              attention particulière à la sécurisation des API REST avec <strong>Spring Security et JWT</strong>, ainsi
+              qu'à l'analyse de sécurité opérationnelle (SOC).
+            </p>
+            <p class="about-text mb-4">
+              J'ai notamment conçu <strong>MémoMaître</strong>, une plateforme PWA <em>Offline-First</em>
+              d'apprentissage accéléré intégrant l'algorithme cognitif FSRS v4 et un coach vocal IA temps réel (LiveKit
+              WebRTC, Gemini/Groq), <strong>SenSanté</strong>, un système d'information médical sous Spring Boot, et
+              contribué au backend de <strong>SyLOC-T</strong> pour le CROUS de Thiès. Rigueur, autonomie et esprit
+              d'équipe guident ma démarche vers un <strong>Master en informatique</strong> et de nouvelles opportunités.
+            </p>
+
+            <div class="d-flex flex-wrap gap-3 pt-2">
+              <a href="projet-cv/index.html" target="_blank" class="btn-about-pill btn-about-dark">
+                <i class="bi bi-eye me-2"></i>Voir mon CV
+              </a>
+              <a href="projet-cv/index.html?print=1" target="_blank" class="btn-about-pill btn-about-purple">
+                <i class="bi bi-printer me-2"></i>Version Imprimable
+              </a>
+              <a href="https://github.com/elmalick25" target="_blank" rel="noopener noreferrer"
+                class="btn-about-pill btn-about-outline">
+                <i class="bi bi-github me-2"></i>GitHub
+              </a>
+            </div>
+          </div>
+
+          <!-- Grille 2x2 de cartes à droite -->
+          <div class="col-lg-6">
+            <div class="row g-4">
+              <div class="col-sm-6">
+                <div class="info-card h-100">
+                  <div class="icon-box-purple mb-3">
+                    <i class="bi bi-mortarboard-fill"></i>
+                  </div>
+                  <h4 class="info-card-title">Formation</h4>
+                  <p class="info-card-text mb-0">
+                    Licence 3 Informatique (Génie Logiciel) — Université Iba Der Thiam de Thiès (UIDT)
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="info-card h-100">
+                  <div class="icon-box-purple mb-3">
+                    <i class="bi bi-code-square"></i>
+                  </div>
+                  <h4 class="info-card-title">Spécialité</h4>
+                  <p class="info-card-text mb-0">
+                    Java, Spring Boot, Python / Django, React 19, Angular et architectures modernes
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="info-card h-100">
+                  <div class="icon-box-purple mb-3">
+                    <i class="bi bi-cpu-fill"></i>
+                  </div>
+                  <h4 class="info-card-title">IA &amp; Cybersécurité</h4>
+                  <p class="info-card-text mb-0">
+                    Agents vocaux IA temps réel (LiveKit WebRTC), LLM Routing, Spring Security, JWT &amp; Analyse SOC
+                  </p>
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <div class="info-card h-100">
+                  <div class="icon-box-purple mb-3">
+                    <i class="bi bi-bullseye"></i>
+                  </div>
+                  <h4 class="info-card-title">Objectif</h4>
+                  <p class="info-card-text mb-0">
+                    Poursuite d'études en Master (Campus France), stages, alternance et projets innovants
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 3. SECTION COMPÉTENCES TECHNIQUES ==================== -->
+    <section id="competences" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Mes compétences techniques</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle mt-3 mx-auto">
+            Un ensemble de compétences acquises à travers mes projets académiques, collaboratifs et mes réalisations
+            personnelles
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- 1. Frontend -->
+          <div class="col-lg-6">
+            <div class="skill-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-box-purple">
+                  <i class="bi bi-code-slash"></i>
+                </div>
+                <h3 class="skill-card-title mb-0">Frontend</h3>
+              </div>
+              <p class="skill-card-desc">
+                Création d'interfaces web modernes, responsives, progressives (PWA) et intuitives
+              </p>
+              <div class="skill-tags">
+                <span class="skill-pill"><i class="devicon-react-original colored"></i> React 19</span>
+                <span class="skill-pill"><i class="devicon-angularjs-plain colored"></i> Angular</span>
+                <span class="skill-pill"><i class="devicon-javascript-plain colored"></i> JavaScript</span>
+                <span class="skill-pill"><i class="devicon-typescript-plain colored"></i> TypeScript</span>
+                <span class="skill-pill"><i class="devicon-html5-plain colored"></i> HTML5</span>
+                <span class="skill-pill"><i class="devicon-css3-plain colored"></i> CSS3</span>
+                <span class="skill-pill"><i class="devicon-bootstrap-plain colored"></i> Bootstrap 5</span>
+                <span class="skill-pill"><i class="devicon-vitejs-plain colored"></i> Vite 6</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2. Backend -->
+          <div class="col-lg-6">
+            <div class="skill-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-box-purple">
+                  <i class="bi bi-hdd-stack-fill"></i>
+                </div>
+                <h3 class="skill-card-title mb-0">Backend</h3>
+              </div>
+              <p class="skill-card-desc">
+                Développement et sécurisation d'API REST et d'applications backend robustes
+              </p>
+              <div class="skill-tags">
+                <span class="skill-pill"><i class="devicon-java-plain colored"></i> Java 17</span>
+                <span class="skill-pill"><i class="devicon-spring-original colored"></i> Spring Boot</span>
+                <span class="skill-pill"><i class="bi bi-shield-lock-fill text-purple"></i> Spring Security</span>
+                <span class="skill-pill"><i class="devicon-hibernate-plain colored"></i> JPA / Hibernate</span>
+                <span class="skill-pill"><i class="devicon-python-plain colored"></i> Python</span>
+                <span class="skill-pill"><i class="devicon-django-plain"></i> Django REST (DRF)</span>
+                <span class="skill-pill"><i class="devicon-c-plain colored"></i> Langage C</span>
+                <span class="skill-pill"><i class="bi bi-broadcast text-purple"></i> WebSocket</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Bases de données -->
+          <div class="col-lg-6">
+            <div class="skill-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-box-purple">
+                  <i class="bi bi-database-fill"></i>
+                </div>
+                <h3 class="skill-card-title mb-0">Bases de données &amp; Persistance</h3>
+              </div>
+              <p class="skill-card-desc">
+                Conception, manipulation, synchronisation Offline-First et migration de bases de données
+              </p>
+              <div class="skill-tags">
+                <span class="skill-pill"><i class="devicon-postgresql-plain colored"></i> PostgreSQL</span>
+                <span class="skill-pill"><i class="devicon-mysql-plain colored"></i> MySQL</span>
+                <span class="skill-pill"><i class="devicon-firebase-plain colored"></i> Firebase Firestore</span>
+                <span class="skill-pill"><i class="bi bi-hdd-network-fill text-purple"></i> WatermelonDB /
+                  IndexedDB</span>
+                <span class="skill-pill"><i class="bi bi-arrow-repeat text-purple"></i> Flyway Migrations</span>
+                <span class="skill-pill"><i class="bi bi-table text-purple"></i> SQL</span>
+                <span class="skill-pill"><i class="bi bi-filetype-xml text-purple"></i> XML / XSLT</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4. Intelligence artificielle & Temps Réel -->
+          <div class="col-lg-6">
+            <div class="skill-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-box-purple">
+                  <i class="bi bi-stars"></i>
+                </div>
+                <h3 class="skill-card-title mb-0">Intelligence artificielle &amp; Temps Réel</h3>
+              </div>
+              <p class="skill-card-desc">
+                Développement et intégration de solutions vocales temps réel, multimodales et cognitives
+              </p>
+              <div class="skill-tags">
+                <span class="skill-pill"><i class="bi bi-mic-fill text-purple"></i> LiveKit WebRTC</span>
+                <span class="skill-pill"><i class="bi bi-robot text-purple"></i> Google Gemini API</span>
+                <span class="skill-pill"><i class="bi bi-lightning-charge-fill text-purple"></i> Groq (Llama 3.3 /
+                  Whisper)</span>
+                <span class="skill-pill"><i class="bi bi-chat-dots-fill text-purple"></i> Anthropic Claude</span>
+                <span class="skill-pill"><i class="bi bi-diagram-3-fill text-purple"></i> Algorithme FSRS v4</span>
+                <span class="skill-pill"><i class="bi bi-soundwave text-purple"></i> VAD &amp; Web Audio API</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5. Cybersécurité, Cloud & Outils -->
+          <div class="col-lg-6">
+            <div class="skill-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-box-purple">
+                  <i class="bi bi-shield-check"></i>
+                </div>
+                <h3 class="skill-card-title mb-0">Cybersécurité, Cloud &amp; Outils</h3>
+              </div>
+              <p class="skill-card-desc">
+                Sécurisation des flux, analyse opérationnelle, versionnement et déploiement cloud
+              </p>
+              <div class="skill-tags">
+                <span class="skill-pill"><i class="bi bi-key-fill text-purple"></i> Authentification JWT</span>
+                <span class="skill-pill"><i class="bi bi-graph-up text-purple"></i> Analyse SOC Junior</span>
+                <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git</span>
+                <span class="skill-pill"><i class="devicon-github-original"></i> GitHub</span>
+                <span class="skill-pill"><i class="devicon-maven-plain colored"></i> Maven</span>
+                <span class="skill-pill"><i class="devicon-swagger-plain colored"></i> Swagger / OpenAPI</span>
+                <span class="skill-pill"><i class="devicon-firebase-plain colored"></i> Firebase Hosting &amp;
+                  Functions</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 6. Architecture & Méthodologies -->
+          <div class="col-lg-6">
+            <div class="skill-card h-100">
+              <div class="d-flex align-items-center gap-3 mb-2">
+                <div class="icon-box-purple">
+                  <i class="bi bi-layers-fill"></i>
+                </div>
+                <h3 class="skill-card-title mb-0">Architecture &amp; Conception</h3>
+              </div>
+              <p class="skill-card-desc">
+                Conception d'architectures logicielles, modélisation de données et travail en équipe
+              </p>
+              <div class="skill-tags">
+                <span class="skill-pill"><i class="bi bi-diagram-2-fill text-purple"></i> MVC</span>
+                <span class="skill-pill"><i class="bi bi-cloud-check-fill text-purple"></i> PWA Offline-First</span>
+                <span class="skill-pill"><i class="bi bi-hdd-rack-fill text-purple"></i> API RESTful</span>
+                <span class="skill-pill"><i class="bi bi-people-fill text-purple"></i> Agile / Scrum</span>
+                <span class="skill-pill"><i class="bi bi-bounding-box text-purple"></i> UML &amp; Merise</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 4. SECTION PROJETS ==================== -->
+    <section id="projets" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow">PORTFOLIO TECHNIQUE</span>
+          <h2 class="section-title">Mes projets &amp; réalisations</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle mt-3 mx-auto">
+            Applications complètes conçues en solo et en équipe, alliant génie logiciel, intelligence artificielle et
+            impact concret
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Projet 1 : MémoMaître -->
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
+              <div class="project-ribbon">PRINCIPAL</div>
+              <div class="icon-box-purple mb-3">
+                <i class="bi bi-brilliance"></i>
+              </div>
+              <h3 class="project-title">MémoMaître</h3>
+              <p class="project-subtitle">
+                PWA Offline-First d'apprentissage accéléré &amp; Coach vocal IA temps réel
+              </p>
+              <p class="project-desc">
+                Plateforme combinant les sciences cognitives (algorithme de répétition espacée FSRS v4), le coach vocal
+                IA temps réel <strong>NOVA</strong> (LiveKit WebRTC + routeur Gemini/Groq), un Lab IA multimodal
+                (extraction depuis PDF/audio/vidéo), un flux de veille Tech Intel et une synchro bidirectionnelle
+                WatermelonDB ↔ Firestore.
+              </p>
+              <div class="project-tags mb-4">
+                <span>React 19</span>
+                <span>Vite 6</span>
+                <span>LiveKit WebRTC</span>
+                <span>Gemini / Groq</span>
+                <span>WatermelonDB</span>
+                <span>Firebase</span>
+                <span>FSRS v4</span>
+              </div>
+              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
+                <a href="https://memo-maitre.web.app" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <i class="bi bi-globe2 me-1"></i>Démo en ligne
+                </a>
+                <a href="https://github.com/elmalick25/memo-maitre" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn">
+                  <i class="bi bi-github me-1"></i>Code source
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projet 2 : SenSanté -->
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
+              <div class="project-ribbon">PRINCIPAL</div>
+              <div class="icon-box-purple mb-3">
+                <i class="bi bi-heart-pulse-fill"></i>
+              </div>
+              <h3 class="project-title">SenSanté</h3>
+              <p class="project-subtitle">
+                Système d'information médical &amp; API REST hautement sécurisée
+              </p>
+              <p class="project-desc">
+                Plateforme de santé permettant la gestion sécurisée des dossiers patients et du suivi médical. Intègre
+                une authentification stateless par jetons JWT (Spring Security), le versionnement automatisé du schéma
+                PostgreSQL avec Flyway, des notifications en direct via WebSocket et une documentation Swagger.
+              </p>
+              <div class="project-tags mb-4">
+                <span>Java 17</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>JWT</span>
+                <span>PostgreSQL</span>
+                <span>Flyway</span>
+                <span>WebSocket</span>
+                <span>Swagger</span>
+              </div>
+              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
+                <a href="https://github.com/elmalick25/SenSanteSn" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <i class="bi bi-github me-1"></i>Voir sur GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projet 3 : SyLOC-T -->
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100">
+              <div class="project-ribbon">ÉQUIPE</div>
+              <div class="icon-box-purple mb-3">
+                <i class="bi bi-building-fill-check"></i>
+              </div>
+              <h3 class="project-title">SyLOC-T (CROUS Thiès)</h3>
+              <p class="project-subtitle">
+                Système de gestion des locaux commerciaux et cantines universitaires
+              </p>
+              <p class="project-desc">
+                Projet collaboratif L3 Génie Logiciel réalisé en équipe de 6 étudiants (rôle : Développeur Backend).
+                Gestion complète des candidatures, commissions d'attribution, génération des baux, suivi des loyers
+                (Wave, Orange Money) et inspections sanitaires QHSE à travers 8 espaces métiers distincts.
+              </p>
+              <div class="project-tags mb-4">
+                <span>Python</span>
+                <span>Django REST (DRF)</span>
+                <span>MySQL</span>
+                <span>React</span>
+                <span>Vite</span>
+                <span>Git Collaboratif</span>
+              </div>
+              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
+                <a href="https://github.com/mhdlamine21/SyLOC-T" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <i class="bi bi-github me-1"></i>Dépôt Collaboratif
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projet 4 : Jumelage Promos UIDT -->
+          <div class="col-lg-6 col-md-6">
+            <article class="project-card h-100">
+              <div class="icon-box-purple mb-3">
+                <i class="bi bi-people-fill"></i>
+              </div>
+              <h3 class="project-title">Jumelage Promos UIDT</h3>
+              <p class="project-subtitle">
+                Plateforme de parrainage académique L1-L2 en informatique
+              </p>
+              <p class="project-desc">
+                Application web conçue pour les promotions d'informatique de l'Université Iba Der Thiam de Thiès afin de
+                faciliter l'intégration des nouveaux bacheliers. Comprend un portail d'enregistrement étudiant ainsi que
+                deux interfaces de pilotage (<code>admin</code> et <code>superadmin</code>) pour superviser les binômes.
+              </p>
+              <div class="project-tags mb-4">
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript</span>
+                <span>Dashboard Admin &amp; Superadmin</span>
+              </div>
+              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
+                <a href="https://github.com/elmalick25/Jumelage-promos" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <i class="bi bi-github me-1"></i>Voir sur GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projet 5 : Assemblée Nationale SN -->
+          <div class="col-lg-6 col-md-12">
+            <article class="project-card h-100">
+              <div class="icon-box-purple mb-3">
+                <i class="bi bi-bank2"></i>
+              </div>
+              <h3 class="project-title">Portail Assemblée Nationale SN</h3>
+              <p class="project-subtitle">
+                Ingénierie documentaire &amp; transformation XML / XSLT parlementaire
+              </p>
+              <p class="project-desc">
+                Modélisation structurée des données institutionnelles de la 15e législature de l'Assemblée nationale du
+                Sénégal (commissions parlementaires, annuaire des députés, informations générales) en XML et génération
+                automatique de vues web consultables via feuilles de style XSLT.
+              </p>
+              <div class="project-tags mb-4">
+                <span>XML</span>
+                <span>XSLT</span>
+                <span>XPath</span>
+                <span>HTML5</span>
+                <span>CSS3</span>
+              </div>
+              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
+                <a href="https://github.com/elmalick25/assemblee-nationale" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <i class="bi bi-github me-1"></i>Voir sur GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 5. SECTION PARCOURS (PROJETS & FORMATION) ==================== -->
+    <section id="parcours" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow">PARCOURS &amp; EXPÉRIENCE PRATIQUE</span>
+          <h2 class="section-title">Réalisations et formation</h2>
+          <div class="section-divider mx-auto"></div>
+        </div>
+
+        <div class="row gy-5">
+          <!-- Colonne gauche : Projets & Réalisations pratiques -->
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-purple">
+                <i class="bi bi-briefcase-fill"></i>
+              </div>
+              <h3 class="timeline-col-title mb-0">Expériences de Projets &amp; Réalisations</h3>
+            </div>
+
+            <div class="timeline-container">
+              <!-- Item 1 : MémoMaître -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2025 - 2026
+                  </div>
+                  <h4 class="timeline-title">Concepteur &amp; Développeur Full Stack / IA — MémoMaître</h4>
+                  <div class="timeline-org">Application PWA en production (memo-maitre.web.app)</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès / Dakar, Sénégal</div>
+                  <p class="timeline-desc">
+                    Conception et déploiement d'une Progressive Web App <em>Offline-First</em> d'apprentissage accéléré
+                    combinant répétition espacée cognitive (scheduler <strong>FSRS v4</strong>), neuro-gamification (XP,
+                    quêtes, constellations) et synchronisation bidirectionnelle <strong>WatermelonDB (IndexedDB) ↔
+                      Firebase Firestore</strong>. Intégration du coach vocal IA temps réel <strong>NOVA</strong>
+                    (pipeline <strong>LiveKit WebRTC</strong>, détection d'activité vocale VAD, routeur multi-modèles
+                    Gemini / Groq Llama 3.3 / Claude) et d'un Lab IA multimodal.
+                  </p>
+                  <div class="timeline-tech-box">
+                    <strong>Technologies :</strong> React 19, Vite 6, Framer Motion, WatermelonDB, Firebase (Hosting,
+                    Firestore, Cloud Functions), LiveKit WebRTC, Google Gemini, Groq API.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 : SyLOC-T -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>Semestre 5 — 2025 / 2026
+                  </div>
+                  <h4 class="timeline-title">Développeur Backend — Projet Collaboratif SyLOC-T</h4>
+                  <div class="timeline-org">CROUS de Thiès — Université Iba Der Thiam</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Développement au sein d'une équipe de 6 étudiants (3 Backend, 3 Frontend) du Système de Gestion des
+                    Locaux Commerciaux et Cantines du CROUS de Thiès (cours de <em>Bases de Données Avancées</em>, L3
+                    Génie Logiciel). Conception de l'API REST, modélisation de la base de données MySQL et
+                    implémentation des flux métiers pour 8 profils utilisateurs : candidatures, commissions
+                    d'attribution, génération des baux, suivi des loyers (Wave, Orange Money) et maintenance QHSE.
+                  </p>
+                  <div class="timeline-tech-box">
+                    <strong>Technologies :</strong> Python, Django REST Framework (DRF), MySQL, React, Vite, Git &amp;
+                    GitHub collaboratif.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 3 : SenSanté -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2025 - 2026
+                  </div>
+                  <h4 class="timeline-title">Concepteur &amp; Développeur Backend — SenSanté</h4>
+                  <div class="timeline-org">Projet d'Architecture Logicielle &amp; Sécurité</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Développement d'un système d'information médical centré sur la sécurité et la fiabilité des données.
+                    Implémentation d'une API REST sécurisée par authentification JWT stateless, gestion des migrations
+                    de base de données PostgreSQL avec Flyway, notifications temps réel par WebSocket et documentation
+                    interactive OpenAPI.
+                  </p>
+                  <div class="timeline-tech-box">
+                    <strong>Technologies :</strong> Java 17, Spring Boot, Spring Security (JJWT), JPA / Hibernate,
+                    PostgreSQL, Flyway, WebSocket, Swagger.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 4 : Jumelage UIDT -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2024 - 2025
+                  </div>
+                  <h4 class="timeline-title">Développeur Web — Plateforme de Jumelage L1-L2</h4>
+                  <div class="timeline-org">Département Informatique — UIDT</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Création d'une application web destinée à automatiser le parrainage entre les promotions Licence 1
+                    et Licence 2 en informatique, avec portail d'inscription et interfaces de gestion administrateur et
+                    super-administrateur.
+                  </p>
+                  <div class="timeline-tech-box">
+                    <strong>Technologies :</strong> HTML5, CSS3, JavaScript, Tableaux de bord d'administration.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : Formation Académique -->
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-purple">
+                <i class="bi bi-mortarboard-fill"></i>
+              </div>
+              <h3 class="timeline-col-title mb-0">Formation</h3>
+            </div>
+
+            <div class="timeline-container">
+              <!-- Formation 1 : L3 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2025 - 2026
+                  </div>
+                  <h4 class="timeline-title">Licence 3 en Informatique — Option Génie Logiciel</h4>
+                  <div class="timeline-org">Université Iba Der Thiam de Thiès (UIDT)</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Génie logiciel, bases de données avancées, conception d'architectures distribuées, sécurité des
+                    systèmes d'information, développement Full Stack et gestion de projets informatiques.
+                  </p>
+                  <span class="timeline-badge">Spécialité : Génie Logiciel</span>
+                </div>
+              </div>
+
+              <!-- Formation 2 : L2 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2024 - 2025
+                  </div>
+                  <h4 class="timeline-title">Licence 2 en Informatique</h4>
+                  <div class="timeline-org">Université Iba Der Thiam de Thiès (UIDT)</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Programmation orientée objet (Java), structures de données avancées, bases de données relationnelles
+                    (SQL / Merise), ingénierie documentaire XML / XSLT, réseaux et technologies du web.
+                  </p>
+                  <span class="timeline-badge">Deuxième année validée</span>
+                </div>
+              </div>
+
+              <!-- Formation 3 : L1 -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2023 - 2024
+                  </div>
+                  <h4 class="timeline-title">Licence 1 en Informatique</h4>
+                  <div class="timeline-org">Université Iba Der Thiam de Thiès (UIDT)</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Algorithmique et programmation structurée en langage C, architecture des ordinateurs, systèmes
+                    d'exploitation et mathématiques fondamentales pour l'informatique.
+                  </p>
+                  <span class="timeline-badge">Première année validée</span>
+                </div>
+              </div>
+
+              <!-- Formation 4 : Baccalauréat -->
+              <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2022 - 2023
+                  </div>
+                  <h4 class="timeline-title">Baccalauréat de l'Enseignement Secondaire</h4>
+                  <div class="timeline-org">Lycée El Hadji Ibrahima Diop</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Dakar, Sénégal</div>
+                  <p class="timeline-desc">
+                    Obtention du diplôme du Baccalauréat, marquant le début de mon cursus universitaire en sciences
+                    informatiques.
+                  </p>
+                  <span class="timeline-badge">Diplôme obtenu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 6. SECTION CERTIFICATIONS ET LANGUES ==================== -->
+    <section id="certifications" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <h2 class="section-title">Certifications et langues</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle mt-3 mx-auto">
+            Des parcours de certification ciblés et des compétences linguistiques qui complètent mon profil en
+            développement logiciel, intelligence artificielle et cybersécurité
+          </p>
+        </div>
+
+        <div class="row gy-5">
+          <!-- Colonne gauche : Mes certifications -->
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-purple">
+                <i class="bi bi-award-fill"></i>
+              </div>
+              <h3 class="timeline-col-title mb-0">Mes certifications</h3>
+            </div>
+
+            <div class="d-flex flex-column gap-4">
+              <!-- Certif 1 : Spring Boot & Angular -->
+              <div class="cert-card">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cert-icon">
+                    <i class="bi bi-layers-half"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-1">
+                      <h4 class="cert-title mb-0">Développement Full Stack : Spring Boot &amp; Angular</h4>
+                      <span class="cert-status-badge">Parcours en cours</span>
+                    </div>
+                    <p class="cert-issuer mb-2">Spécialisation Ingénierie Logicielle &amp; API Entreprise</p>
+                    <p class="cert-desc mb-0">
+                      Conception d'architectures backend avec Spring Boot et Spring Security (JWT), persistance
+                      JPA/Hibernate et création d'interfaces Single Page Application (SPA) modulaires avec Angular et
+                      TypeScript.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certif 2 : Analyst SOC Junior -->
+              <div class="cert-card">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cert-icon">
+                    <i class="bi bi-shield-shaded"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-1">
+                      <h4 class="cert-title mb-0">Junior SOC Analyst (Security Operations Center)</h4>
+                      <span class="cert-status-badge">Parcours en cours</span>
+                    </div>
+                    <p class="cert-issuer mb-2">Spécialisation Cybersécurité &amp; Défense Opérationnelle</p>
+                    <p class="cert-desc mb-0">
+                      Surveillance de la sécurité des réseaux et des systèmes, analyse de journaux d'événements (SIEM),
+                      détection d'intrusions, qualification d'alertes et procédures de réponse aux incidents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Colonne droite : Langues -->
+          <div class="col-lg-6">
+            <div class="d-flex align-items-center gap-3 mb-4">
+              <div class="icon-box-purple">
+                <i class="bi bi-translate"></i>
+              </div>
+              <h3 class="timeline-col-title mb-0">Langues</h3>
+            </div>
+
+            <div class="d-flex flex-column gap-3">
+              <!-- Wolof -->
+              <div class="lang-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div>
+                    <span class="lang-code me-2">SN</span>
+                    <strong class="lang-name">Wolof</strong>
+                  </div>
+                  <span class="lang-level">Langue maternelle</span>
+                </div>
+                <div class="lang-progress">
+                  <div class="lang-progress-bar" style="width: 100%;"></div>
+                </div>
+              </div>
+
+              <!-- Français -->
+              <div class="lang-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div>
+                    <span class="lang-code me-2">FR</span>
+                    <strong class="lang-name">Français</strong>
+                  </div>
+                  <span class="lang-level">Courant &amp; Académique</span>
+                </div>
+                <div class="lang-progress">
+                  <div class="lang-progress-bar" style="width: 85%;"></div>
+                </div>
+              </div>
+
+              <!-- Anglais -->
+              <div class="lang-card">
+                <div class="d-flex justify-content-between align-items-center mb-2">
+                  <div>
+                    <span class="lang-code me-2">EN</span>
+                    <strong class="lang-name">Anglais</strong>
+                  </div>
+                  <span class="lang-level">Technique &amp; Intermédiaire</span>
+                </div>
+                <div class="lang-progress">
+                  <div class="lang-progress-bar" style="width: 60%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== 7. SECTION CONTACT ==================== -->
+    <section id="contact" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center mb-5">
+          <span class="section-eyebrow">TRAVAILLONS ENSEMBLE</span>
+          <h2 class="section-title">Contactez-moi</h2>
+          <div class="section-divider mx-auto"></div>
+          <p class="section-subtitle mt-3 mx-auto">
+            Vous avez une opportunité académique, un stage, une alternance ou un projet à réaliser ? N'hésitez pas à me
+            contacter
+          </p>
+        </div>
+
+        <div class="row g-4 align-items-stretch">
+          <!-- Carte violette à gauche -->
+          <div class="col-lg-5">
+            <div class="contact-info-panel h-100 d-flex flex-column justify-content-between">
+              <div>
+                <h3 class="contact-panel-title mb-3">Parlons de votre projet</h3>
+                <p class="contact-panel-desc mb-4">
+                  Je suis ouvert aux opportunités d'études (Master), aux stages, aux projets collaboratifs et aux
+                  échanges dans le développement Full Stack, l'intelligence artificielle et la cybersécurité.
+                </p>
+
+                <!-- Email -->
+                <div class="contact-item-box mb-3">
+                  <div class="contact-item-icon">
+                    <i class="bi bi-envelope-fill"></i>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">E-mail</div>
+                    <a href="mailto:ehmalick.sy1@univ-thies.sn" class="contact-item-value text-decoration-none">
+                      ehmalick.sy1@univ-thies.sn
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Téléphone -->
+                <div class="contact-item-box mb-3">
+                  <div class="contact-item-icon">
+                    <i class="bi bi-telephone-fill"></i>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Téléphone / WhatsApp</div>
+                    <a href="tel:+221780117156" class="contact-item-value text-decoration-none">
+                      +221 78 011 71 56 / 76 020 07 23
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Localisation -->
+                <div class="contact-item-box mb-4">
+                  <div class="contact-item-icon">
+                    <i class="bi bi-geo-alt-fill"></i>
+                  </div>
+                  <div>
+                    <div class="contact-item-label">Localisation</div>
+                    <div class="contact-item-value">
+                      Yeumbeul Nord, Dakar / Thiès, Sénégal
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Icônes sociales -->
+              <div class="d-flex gap-3 pt-2">
+                <a href="https://github.com/elmalick25" target="_blank" rel="noopener noreferrer"
+                  class="contact-social-btn" aria-label="GitHub">
+                  <i class="bi bi-github"></i>
+                </a>
+                <a href="https://wa.me/221780117156" target="_blank" rel="noopener noreferrer"
+                  class="contact-social-btn" aria-label="WhatsApp">
+                  <i class="bi bi-whatsapp"></i>
+                </a>
+                <a href="mailto:ehmalick.sy1@univ-thies.sn" class="contact-social-btn" aria-label="Email">
+                  <i class="bi bi-envelope-fill"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Formulaire à droite -->
+          <div class="col-lg-7">
+            <div class="contact-form-panel h-100">
+              <form id="contactForm">
+                <div class="row g-3">
+                  <div class="col-md-6">
+                    <label for="contactName" class="form-label-custom">Nom complet</label>
+                    <input type="text" id="contactName" class="form-control-custom" placeholder="Votre nom" required>
+                  </div>
+                  <div class="col-md-6">
+                    <label for="contactEmail" class="form-label-custom">Adresse e-mail</label>
+                    <input type="email" id="contactEmail" class="form-control-custom" placeholder="votre@email.com"
+                      required>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactSubject" class="form-label-custom">Sujet</label>
+                    <input type="text" id="contactSubject" class="form-control-custom"
+                      placeholder="Proposition de stage, collaboration ou admission" required>
+                  </div>
+                  <div class="col-12">
+                    <label for="contactMessage" class="form-label-custom">Message</label>
+                    <textarea id="contactMessage" rows="5" class="form-control-custom"
+                      placeholder="Écrivez votre message..." required></textarea>
+                  </div>
+                  <div class="col-12 pt-2">
+                    <button type="submit" class="btn-submit-purple w-100">
+                      <i class="bi bi-send-fill me-2"></i>Envoyer le message
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="footer-dark">
+    <div class="container">
+      <div class="row gy-4 align-items-start pb-4 border-bottom border-secondary border-opacity-25">
+        <div class="col-lg-5">
+          <a href="#accueil" class="brand-logo text-white text-decoration-none d-inline-block mb-2">
+            Malick<span class="brand-dot">.</span>
+          </a>
+          <p class="footer-desc mb-0">
+            Étudiant en Licence 3 Informatique (Génie Logiciel) à l'UIDT de Thiès — Développement Full Stack,
+            Intelligence Artificielle &amp; Cybersécurité.
+          </p>
+        </div>
+
+        <div class="col-lg-4">
+          <h4 class="footer-heading mb-3">Navigation</h4>
+          <div class="row">
+            <div class="col-6">
+              <ul class="list-unstyled footer-links mb-0">
+                <li><a href="#accueil">Accueil</a></li>
+                <li><a href="#a-propos">À propos</a></li>
+                <li><a href="#competences">Compétences</a></li>
+                <li><a href="#projets">Projets</a></li>
+              </ul>
+            </div>
+            <div class="col-6">
+              <ul class="list-unstyled footer-links mb-0">
+                <li><a href="#parcours">Parcours</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="projet-cv/index.html" target="_blank">Mon CV</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-3">
+          <h4 class="footer-heading mb-3">Retrouvez-moi</h4>
+          <div class="d-flex gap-3">
+            <a href="https://github.com/elmalick25" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="GitHub">
+              <i class="bi bi-github"></i>
+            </a>
+            <a href="https://wa.me/221780117156" target="_blank" rel="noopener noreferrer" class="footer-social-btn"
+              aria-label="WhatsApp">
+              <i class="bi bi-whatsapp"></i>
+            </a>
+            <a href="mailto:ehmalick.sy1@univ-thies.sn" class="footer-social-btn" aria-label="Email">
+              <i class="bi bi-envelope-fill"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-flex flex-wrap justify-content-between align-items-center pt-4">
+        <p class="footer-copy mb-0">
+          &copy; 2026 <strong>El Hadji Malick SY</strong>. Tous droits réservés.
+        </p>
+        <a href="#accueil" class="scroll-top-btn" aria-label="Retour en haut">
+          <i class="bi bi-arrow-up"></i>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script du Portfolio -->
+  <script src="js/portfolio.js"></script>
+</body>
+
+</html>
