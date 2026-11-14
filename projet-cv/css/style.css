@@ -53,7 +53,13 @@ body {
   line-height: 1.5;
 }
 
-h1, h2, h3, h4, #nom, .cv-section-title, .sidebar-heading {
+h1,
+h2,
+h3,
+h4,
+#nom,
+.cv-section-title,
+.sidebar-heading {
   font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
 }
 
@@ -726,6 +732,7 @@ main.cv-sheet {
 }
 
 @media print {
+
   html,
   body {
     background: #ffffff !important;
@@ -736,10 +743,32 @@ main.cv-sheet {
     print-color-adjust: exact !important;
   }
 
-  .cv-toolbar,
-  #contact-us,
-  .conteneur {
+  .cv-toolbar {
     display: none !important;
+  }
+
+  #contact-us {
+    margin-top: 10px !important;
+    padding-top: 8px !important;
+  }
+
+  #contact-us a {
+    width: 28px !important;
+    height: 28px !important;
+    font-size: 13px !important;
+    margin: 2px 5px !important;
+  }
+
+  .conteneur {
+    margin-top: 6px !important;
+    margin-bottom: 0 !important;
+    gap: 8px !important;
+  }
+
+  .propos {
+    padding: 6px 14px !important;
+    font-size: 0.78rem !important;
+    box-shadow: none !important;
   }
 
   main.cv-sheet {
@@ -751,7 +780,7 @@ main.cv-sheet {
     margin: 0 !important;
   }
 
-  main.cv-sheet > .row {
+  main.cv-sheet>.row {
     display: flex !important;
     flex-direction: row !important;
     flex-wrap: nowrap !important;
