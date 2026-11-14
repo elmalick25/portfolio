@@ -112,21 +112,21 @@
           </ul>
         </div>
 
-        <!-- Section LANGUES (Norme CECRL + Jauge calibrée) -->
+        <!-- Section LANGUES -->
         <div id="langue" class="sidebar-section">
           <div class="sidebar-heading">
             <i class="bi bi-translate"></i>
-            <span>LANGUES (CECRL)</span>
+            <span>LANGUES</span>
           </div>
 
           <!-- Français -->
           <div class="lang-item">
             <div class="lang-header">
               <span class="lang-name">Français</span>
-              <span class="lang-level">C1 • Courant &amp; Académique</span>
+              <span class="lang-level">Courant &amp; Académique</span>
             </div>
-            <div class="progress" role="progressbar" aria-label="Français C1" aria-valuenow="90" aria-valuemin="0"
-              aria-valuemax="100">
+            <div class="progress" role="progressbar" aria-label="Français Courant et Académique" aria-valuenow="90"
+              aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar" style="width: 90%;"></div>
             </div>
           </div>
@@ -135,10 +135,10 @@
           <div class="lang-item">
             <div class="lang-header">
               <span class="lang-name">Anglais</span>
-              <span class="lang-level">B2 • Technique &amp; Doc Cyber/IT</span>
+              <span class="lang-level">Technique &amp; Professionnel</span>
             </div>
-            <div class="progress" role="progressbar" aria-label="Anglais B2" aria-valuenow="68" aria-valuemin="0"
-              aria-valuemax="100">
+            <div class="progress" role="progressbar" aria-label="Anglais Technique et Professionnel" aria-valuenow="68"
+              aria-valuemin="0" aria-valuemax="100">
               <div class="progress-bar" style="width: 68%;"></div>
             </div>
           </div>
@@ -269,7 +269,7 @@
           </div>
         </div>
 
-        <!-- 2. COMPÉTENCES TECHNIQUES (Cybersécurité en 1er plan) -->
+        <!-- 2. COMPÉTENCES TECHNIQUES (Cybersécurité, Réseaux & Cryptologie en 1er plan) -->
         <div id="competences">
           <h2 id="section3" class="titre-defilant">
             <i class="bi bi-cpu-fill"></i>
@@ -278,11 +278,11 @@
           <div class="partie-a-remplir skills-matrix">
             <div class="skill-group-box">
               <div class="skill-group-title">
-                <i class="bi bi-shield-check"></i>Cybersécurité, Réseaux &amp; Systèmes
+                <i class="bi bi-shield-check"></i>Cybersécurité, Réseaux &amp; Cryptologie
               </div>
               <p class="skill-group-items">
-                Analyse SOC Junior (SIEM, détection d'intrusions, réponse aux incidents), Sécurité des réseaux &amp;
-                protocoles, Sécurité API REST (OWASP, JWT, RBAC), Linux / Unix
+                Analyse SOC Junior (SIEM, détection d'intrusions, réponse aux incidents), Réseaux &amp; protocoles
+                (TCP/IP, DNS, TLS/HTTPS, WebRTC), Cryptographie (BCrypt, HMAC-SHA256, JWT), OWASP Top 10, RBAC, Linux
               </p>
             </div>
             <div class="skill-group-box">
@@ -313,7 +313,7 @@
           </div>
         </div>
 
-        <!-- 3. PROJETS ACADÉMIQUES & TECHNIQUES (Sans dates) -->
+        <!-- 3. PROJETS ACADÉMIQUES & TECHNIQUES (SenSanté en n°1 pour la cohérence Cybersécurité) -->
         <div id="travaux">
           <h2 id="section5">
             <i class="bi bi-kanban-fill"></i>
@@ -321,27 +321,7 @@
           </h2>
           <div class="partie-a-remplir projects-list">
 
-            <!-- Projet 1 -->
-            <article class="project-entry">
-              <div class="project-top">
-                <a href="https://github.com/elmalick25/memo-maitre" target="_blank" rel="noopener noreferrer"
-                  class="project-title-link">
-                  <span>MémoMaître (MemoMaster) — Plateforme EdTech &amp; Coach Vocal IA</span>
-                  <i class="bi bi-box-arrow-up-right small"></i>
-                </a>
-              </div>
-              <div class="project-stack-tag">
-                React 19 • Vite 6 • LiveKit WebRTC • Gemini / Groq API • WatermelonDB • Firebase • Algorithme FSRS v4
-              </div>
-              <ul class="project-bullets">
-                <li>Architecture d'une PWA <em>Offline-First</em> synchronisant base locale (WatermelonDB) et cloud
-                  (Firestore) avec planification cognitive de répétition espacée <strong>FSRS v4</strong>.</li>
-                <li>Intégration d'un agent vocal IA temps réel (<strong>NOVA</strong> via LiveKit WebRTC) et génération
-                  automatique de flashcards/quiz multimodaux.</li>
-              </ul>
-            </article>
-
-            <!-- Projet 2 -->
+            <!-- Projet 1 : SenSanté (Priorité Sécurité Applicative & Cryptographie) -->
             <article class="project-entry">
               <div class="project-top">
                 <a href="https://github.com/elmalick25/SenSanteSn" target="_blank" rel="noopener noreferrer"
@@ -351,13 +331,35 @@
                 </a>
               </div>
               <div class="project-stack-tag">
-                Java • Spring Boot • Spring Security (JJWT) • PostgreSQL • Flyway • WebSocket • Swagger / OpenAPI
+                Java • Spring Boot • Spring Security (JJWT) • Cryptographie (BCrypt / HMAC-SHA256) • PostgreSQL • Flyway • WebSocket
               </div>
               <ul class="project-bullets">
-                <li>Développement d'une API REST médicale sécurisée par authentification <strong>JWT stateless</strong>
-                  et contrôle d'accès par rôles (médecins, patients, administrateurs).</li>
-                <li>Industrialisation des migrations de base de données PostgreSQL avec <strong>Flyway</strong> et
-                  notifications en temps réel via <strong>WebSocket</strong>.</li>
+                <li>Architecture d'une API REST médicale avec protection des données sensibles de santé, hachage
+                  cryptographique des mots de passe (<strong>BCrypt</strong>), signatures <strong>JWT stateless
+                    (HMAC-SHA256)</strong> et contrôle d'accès strict par rôles (<strong>RBAC</strong>).</li>
+                <li>Prévention des failles <strong>OWASP Top 10</strong>, industrialisation des migrations PostgreSQL avec
+                  <strong>Flyway</strong> et notifications temps réel sécurisées via <strong>WebSocket</strong>.</li>
+              </ul>
+            </article>
+
+            <!-- Projet 2 : MémoMaître -->
+            <article class="project-entry">
+              <div class="project-top">
+                <a href="https://github.com/elmalick25/memo-maitre" target="_blank" rel="noopener noreferrer"
+                  class="project-title-link">
+                  <span>MémoMaître (MemoMaster) — Plateforme EdTech &amp; Coach Vocal IA</span>
+                  <i class="bi bi-box-arrow-up-right small"></i>
+                </a>
+              </div>
+              <div class="project-stack-tag">
+                React 19 • Vite 6 • LiveKit WebRTC • Gemini / Groq / Claude API • WatermelonDB • Firebase (Cloud Functions &amp; Rules) • FSRS v4
+              </div>
+              <ul class="project-bullets">
+                <li>Conception d'une PWA <em>Offline-First</em> synchronisant base locale (WatermelonDB) et cloud
+                  (Firestore) avec planification cognitive <strong>FSRS v4</strong> et agent vocal IA temps réel
+                  (<strong>NOVA</strong> via flux <strong>LiveKit WebRTC</strong>).</li>
+                <li>Sécurisation des échanges client-serveur, isolation des clés API LLM côté serveur via <strong>Cloud
+                    Functions</strong> et contrôle d'accès granulaire par <strong>règles de sécurité Firestore</strong>.</li>
               </ul>
             </article>
 

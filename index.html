@@ -230,23 +230,23 @@
         </div>
 
         <div class="row g-4">
-          <!-- 1. Cybersécurité, Réseaux & Défense SOC (EN PREMIER PLAN) -->
+          <!-- 1. Cybersécurité, Réseaux & Cryptologie (EN PREMIER PLAN) -->
           <div class="col-lg-6">
             <div class="skill-card h-100 reveal-on-scroll reveal-delay-1">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-shield-check"></i>
                 </div>
-                <h3 class="skill-card-title mb-0">Cybersécurité, Réseaux &amp; Défense SOC</h3>
+                <h3 class="skill-card-title mb-0">Cybersécurité, Réseaux &amp; Cryptologie</h3>
               </div>
               <p class="skill-card-desc">
-                Analyse de sécurité opérationnelle, protection des réseaux/systèmes, sécurisation d'API et veille des menaces
+                Analyse de sécurité opérationnelle, réseaux &amp; protocoles, cryptographie appliquée et sécurisation d'API
               </p>
               <div class="skill-tags">
                 <span class="skill-pill"><i class="bi bi-shield-lock-fill text-purple"></i> Analyse SOC Junior (SIEM)</span>
-                <span class="skill-pill"><i class="bi bi-hdd-network-fill text-purple"></i> Sécurité des Réseaux</span>
-                <span class="skill-pill"><i class="bi bi-key-fill text-purple"></i> Authentification JWT &amp; RBAC</span>
-                <span class="skill-pill"><i class="bi bi-bug-fill text-purple"></i> OWASP &amp; Analyse de Vulnérabilités</span>
+                <span class="skill-pill"><i class="bi bi-hdd-network-fill text-purple"></i> Réseaux (TCP/IP, DNS, TLS/HTTPS)</span>
+                <span class="skill-pill"><i class="bi bi-key-fill text-purple"></i> Cryptographie (BCrypt, HMAC-SHA256, JWT)</span>
+                <span class="skill-pill"><i class="bi bi-bug-fill text-purple"></i> OWASP Top 10 &amp; RBAC</span>
                 <span class="skill-pill"><i class="devicon-linux-plain"></i> Linux / Systèmes</span>
                 <span class="skill-pill"><i class="devicon-git-plain colored"></i> Git &amp; GitHub</span>
                 <span class="skill-pill"><i class="devicon-swagger-plain colored"></i> Swagger / OpenAPI</span>
@@ -386,36 +386,73 @@
           <h2 class="section-title">Mes projets &amp; réalisations</h2>
           <div class="section-divider mx-auto"></div>
           <p class="section-subtitle mt-3 mx-auto">
-            Applications complètes conçues en solo et en équipe, alliant génie logiciel, intelligence artificielle et
-            impact concret
+            Applications complètes conçues en solo et en équipe, alliant cybersécurité, génie logiciel et intelligence
+            artificielle
           </p>
         </div>
 
         <div class="row g-4">
-          <!-- Projet 1 : MémoMaître -->
+          <!-- Projet 1 : SenSanté (Priorité Cybersécurité & Protection des données sensibles) -->
           <div class="col-lg-4 col-md-6">
             <article class="project-card h-100 reveal-on-scroll reveal-delay-1">
+              <div class="project-ribbon">PRINCIPAL</div>
+              <div class="icon-box-purple mb-3">
+                <i class="bi bi-heart-pulse-fill"></i>
+              </div>
+              <h3 class="project-title">SenSanté</h3>
+              <p class="project-subtitle">
+                Système d'information médical &amp; API REST hautement sécurisée
+              </p>
+              <p class="project-desc">
+                Plateforme de santé dédiée à la protection des dossiers patients et données médicales sensibles. Intègre
+                le hachage cryptographique des mots de passe (<strong>BCrypt</strong>), l'authentification stateless par
+                signatures <strong>JWT (HMAC-SHA256)</strong>, le contrôle d'accès par rôles (<strong>RBAC</strong>), la
+                prévention des failles <strong>OWASP Top 10</strong>, des migrations PostgreSQL avec Flyway et des flux
+                temps réel WebSocket.
+              </p>
+              <div class="project-tags mb-4">
+                <span>Java</span>
+                <span>Spring Boot</span>
+                <span>Spring Security</span>
+                <span>JWT / BCrypt</span>
+                <span>RBAC &amp; OWASP</span>
+                <span>PostgreSQL</span>
+                <span>Flyway</span>
+                <span>WebSocket</span>
+              </div>
+              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
+                <a href="https://github.com/elmalick25/SenSanteSn" target="_blank" rel="noopener noreferrer"
+                  class="project-link-btn primary">
+                  <i class="bi bi-github me-1"></i>Voir sur GitHub
+                </a>
+              </div>
+            </article>
+          </div>
+
+          <!-- Projet 2 : MémoMaître -->
+          <div class="col-lg-4 col-md-6">
+            <article class="project-card h-100 reveal-on-scroll reveal-delay-2">
               <div class="project-ribbon">PRINCIPAL</div>
               <div class="icon-box-purple mb-3">
                 <i class="bi bi-brilliance"></i>
               </div>
               <h3 class="project-title">MémoMaître</h3>
               <p class="project-subtitle">
-                PWA Offline-First d'apprentissage accéléré &amp; Coach vocal IA temps réel
+                PWA Offline-First d'apprentissage accéléré &amp; Coach vocal IA temps réel sécurisé
               </p>
               <p class="project-desc">
-                Plateforme combinant les sciences cognitives (algorithme de répétition espacée FSRS v4), le coach vocal
-                IA temps réel <strong>NOVA</strong> (LiveKit WebRTC + routeur Gemini/Groq), un Lab IA multimodal
-                (extraction depuis PDF/audio/vidéo), un flux de veille Tech Intel et une synchro bidirectionnelle
-                WatermelonDB ↔ Firestore.
+                Plateforme combinant répétition espacée cognitive (FSRS v4), coach vocal IA temps réel
+                <strong>NOVA</strong> (flux <strong>LiveKit WebRTC</strong> + routeur Gemini/Groq/Claude) et synchro
+                WatermelonDB ↔ Firestore. Sécurisation des échanges client-serveur, isolation des clés API LLM via
+                <strong>Cloud Functions</strong> et contrôle d'accès par <strong>règles de sécurité Firestore</strong>.
               </p>
               <div class="project-tags mb-4">
                 <span>React 19</span>
                 <span>Vite 6</span>
                 <span>LiveKit WebRTC</span>
-                <span>Gemini / Groq</span>
+                <span>Gemini / Groq / Claude</span>
                 <span>WatermelonDB</span>
-                <span>Firebase</span>
+                <span>Cloud Functions &amp; Rules</span>
                 <span>FSRS v4</span>
               </div>
               <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
@@ -426,41 +463,6 @@
                 <a href="https://github.com/elmalick25/memo-maitre" target="_blank" rel="noopener noreferrer"
                   class="project-link-btn">
                   <i class="bi bi-github me-1"></i>Code source
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Projet 2 : SenSanté -->
-          <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100 reveal-on-scroll reveal-delay-2">
-              <div class="project-ribbon">PRINCIPAL</div>
-              <div class="icon-box-purple mb-3">
-                <i class="bi bi-heart-pulse-fill"></i>
-              </div>
-              <h3 class="project-title">SenSanté</h3>
-              <p class="project-subtitle">
-                Système d'information médical &amp; API REST hautement sécurisée
-              </p>
-              <p class="project-desc">
-                Plateforme de santé permettant la gestion sécurisée des dossiers patients et du suivi médical. Intègre
-                une authentification stateless par jetons JWT (Spring Security), le versionnement automatisé du schéma
-                PostgreSQL avec Flyway, des notifications en direct via WebSocket et une documentation Swagger.
-              </p>
-              <div class="project-tags mb-4">
-                <span>Java</span>
-                <span>Spring Boot</span>
-                <span>Spring Security</span>
-                <span>JWT</span>
-                <span>PostgreSQL</span>
-                <span>Flyway</span>
-                <span>WebSocket</span>
-                <span>Swagger</span>
-              </div>
-              <div class="project-links mt-auto pt-2 border-top d-flex gap-3">
-                <a href="https://github.com/elmalick25/SenSanteSn" target="_blank" rel="noopener noreferrer"
-                  class="project-link-btn primary">
-                  <i class="bi bi-github me-1"></i>Voir sur GitHub
                 </a>
               </div>
             </article>
@@ -583,7 +585,31 @@
             </div>
 
             <div class="timeline-container">
-              <!-- Item 1 : MémoMaître -->
+              <!-- Item 1 : SenSanté (Priorité Cybersécurité & Sécurité Applicative) -->
+              <div class="timeline-item reveal-on-scroll">
+                <div class="timeline-dot"></div>
+                <div class="timeline-card">
+                  <div class="timeline-date">
+                    <i class="bi bi-calendar3 me-1"></i>2025 - 2026
+                  </div>
+                  <h4 class="timeline-title">Concepteur &amp; Développeur Backend Sécurité — SenSanté</h4>
+                  <div class="timeline-org">Projet d'Architecture Logicielle &amp; Sécurité des Données de Santé</div>
+                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
+                  <p class="timeline-desc">
+                    Développement d'un système d'information médical centré sur la confidentialité, l'intégrité et la
+                    disponibilité des données sensibles. Implémentation d'une API REST sécurisée par hachage
+                    cryptographique <strong>BCrypt</strong>, signatures <strong>JWT stateless (HMAC-SHA256)</strong>,
+                    contrôle d'accès par rôles (<strong>RBAC</strong>), prévention des failles <strong>OWASP Top
+                      10</strong>, migrations PostgreSQL avec Flyway et notifications temps réel par WebSocket.
+                  </p>
+                  <div class="timeline-tech-box">
+                    <strong>Technologies :</strong> Java, Spring Boot, Spring Security (JJWT / BCrypt / RBAC), JPA /
+                    Hibernate, PostgreSQL, Flyway, WebSocket, Swagger.
+                  </div>
+                </div>
+              </div>
+
+              <!-- Item 2 : MémoMaître -->
               <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
@@ -595,20 +621,20 @@
                   <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès / Dakar, Sénégal</div>
                   <p class="timeline-desc">
                     Conception et déploiement d'une Progressive Web App <em>Offline-First</em> d'apprentissage accéléré
-                    combinant répétition espacée cognitive (scheduler <strong>FSRS v4</strong>), neuro-gamification (XP,
-                    quêtes, constellations) et synchronisation bidirectionnelle <strong>WatermelonDB (IndexedDB) ↔
-                      Firebase Firestore</strong>. Intégration du coach vocal IA temps réel <strong>NOVA</strong>
-                    (pipeline <strong>LiveKit WebRTC</strong>, détection d'activité vocale VAD, routeur multi-modèles
-                    Gemini / Groq Llama 3.3 / Claude) et d'un Lab IA multimodal.
+                    combinant répétition espacée cognitive (scheduler <strong>FSRS v4</strong>), synchronisation
+                    bidirectionnelle <strong>WatermelonDB ↔ Firebase Firestore</strong> et coach vocal IA temps réel
+                    <strong>NOVA</strong> (pipeline <strong>LiveKit WebRTC</strong>, routeur Gemini / Groq / Claude).
+                    Sécurisation des échanges client-serveur, isolation des clés API via <strong>Cloud
+                      Functions</strong> et règles de sécurité <strong>Firestore</strong>.
                   </p>
                   <div class="timeline-tech-box">
-                    <strong>Technologies :</strong> React 19, Vite 6, Framer Motion, WatermelonDB, Firebase (Hosting,
-                    Firestore, Cloud Functions), LiveKit WebRTC, Google Gemini, Groq API.
+                    <strong>Technologies :</strong> React 19, Vite 6, WatermelonDB, Firebase (Hosting, Firestore Rules,
+                    Cloud Functions), LiveKit WebRTC, Google Gemini, Groq, Anthropic Claude.
                   </div>
                 </div>
               </div>
 
-              <!-- Item 2 : SyLOC-T -->
+              <!-- Item 3 : SyLOC-T -->
               <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
@@ -628,29 +654,6 @@
                   <div class="timeline-tech-box">
                     <strong>Technologies :</strong> Python, Django REST Framework (DRF), MySQL, React, Vite, Git &amp;
                     GitHub collaboratif.
-                  </div>
-                </div>
-              </div>
-
-              <!-- Item 3 : SenSanté -->
-              <div class="timeline-item reveal-on-scroll">
-                <div class="timeline-dot"></div>
-                <div class="timeline-card">
-                  <div class="timeline-date">
-                    <i class="bi bi-calendar3 me-1"></i>2025 - 2026
-                  </div>
-                  <h4 class="timeline-title">Concepteur &amp; Développeur Backend — SenSanté</h4>
-                  <div class="timeline-org">Projet d'Architecture Logicielle &amp; Sécurité</div>
-                  <div class="timeline-loc"><i class="bi bi-geo-alt-fill me-1"></i>Thiès, Sénégal</div>
-                  <p class="timeline-desc">
-                    Développement d'un système d'information médical centré sur la sécurité et la fiabilité des données.
-                    Implémentation d'une API REST sécurisée par authentification JWT stateless, gestion des migrations
-                    de base de données PostgreSQL avec Flyway, notifications temps réel par WebSocket et documentation
-                    interactive OpenAPI.
-                  </p>
-                  <div class="timeline-tech-box">
-                    <strong>Technologies :</strong> Java, Spring Boot, Spring Security (JJWT), JPA / Hibernate,
-                    PostgreSQL, Flyway, WebSocket, Swagger.
                   </div>
                 </div>
               </div>
@@ -776,7 +779,7 @@
           <div class="section-divider mx-auto"></div>
           <p class="section-subtitle mt-3 mx-auto">
             Des parcours de certification reconnus et des compétences linguistiques qui complètent mon profil en
-            développement logiciel, intelligence artificielle et cybersécurité
+            cybersécurité, génie logiciel et intelligence artificielle
           </p>
         </div>
 
@@ -929,10 +932,10 @@
                     <span class="lang-code me-2">EN</span>
                     <strong class="lang-name">Anglais</strong>
                   </div>
-                  <span class="lang-level">Technique &amp; Intermédiaire</span>
+                  <span class="lang-level">Technique &amp; Professionnel</span>
                 </div>
                 <div class="lang-progress">
-                  <div class="lang-progress-bar" data-width="60%" style="--target-width: 60%;"></div>
+                  <div class="lang-progress-bar" data-width="68%" style="--target-width: 68%;"></div>
                 </div>
               </div>
             </div>
@@ -962,7 +965,7 @@
                 <h3 class="contact-panel-title mb-3">Parlons de votre projet</h3>
                 <p class="contact-panel-desc mb-4">
                   Je suis ouvert aux opportunités d'études (Master), aux stages, aux projets collaboratifs et aux
-                  échanges dans le développement Full Stack, l'intelligence artificielle et la cybersécurité.
+                  échanges en cybersécurité, génie logiciel Full Stack et intelligence artificielle.
                 </p>
 
                 <!-- Email -->
@@ -1069,8 +1072,8 @@
             Malick<span class="brand-dot">.</span>
           </a>
           <p class="footer-desc mb-0">
-            Étudiant en Licence 3 Informatique (Génie Logiciel) à l'UIDT de Thiès — Développement Full Stack,
-            Intelligence Artificielle &amp; Cybersécurité.
+            Étudiant en Licence 3 Informatique (Génie Logiciel) à l'UIDT de Thiès — Cybersécurité, Génie Logiciel Full
+            Stack &amp; Intelligence Artificielle.
           </p>
         </div>
 
