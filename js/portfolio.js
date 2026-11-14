@@ -6,9 +6,18 @@ document.addEventListener("DOMContentLoaded", function () {
   const sections = document.querySelectorAll("main section[id]");
   const contactForm = document.getElementById("contactForm");
 
-  // 1. Menu mobile (ouverture / fermeture)
+  // 1. Menu mobile (ouverture / fermeture & accessibilité)
+  function closeMobileMenu() {
+    if (navLinksContainer && navLinksContainer.classList.contains("open")) {
+      navLinksContainer.classList.remove("open");
+      const icon = mobileMenuBtn ? mobileMenuBtn.querySelector("i") : null;
+      if (icon) icon.className = "bi bi-list";
+    }
+  }
+
   if (mobileMenuBtn && navLinksContainer) {
-    mobileMenuBtn.addEventListener("click", function () {
+    mobileMenuBtn.addEventListener("click", function (e) {
+      e.stopPropagation();
       navLinksContainer.classList.toggle("open");
       const icon = mobileMenuBtn.querySelector("i");
       if (icon) {
@@ -20,14 +29,40 @@ document.addEventListener("DOMContentLoaded", function () {
 
     navLinks.forEach((link) => {
       link.addEventListener("click", () => {
-        navLinksContainer.classList.remove("open");
-        const icon = mobileMenuBtn.querySelector("i");
-        if (icon) icon.className = "bi bi-list";
+        closeMobileMenu();
       });
+    });
+
+    // Fermeture en cas de clic en dehors du menu
+    document.addEventListener("click", function (e) {
+      if (header && !header.contains(e.target)) {
+        closeMobileMenu();
+      }
+    });
+
+    // Fermeture avec la touche Échap
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape") {
+        closeMobileMenu();
+      }
     });
   }
 
-  // 2. Ombre sur la barre de navigation + lien actif au défilement (ScrollSpy)
+  // 2. Gestion de l'état actif de la barre de navigation
+  function setActiveLink(id) {
+    navLinks.forEach((link) => {
+      const isTarget = link.getAttribute("href") === `#${id}`;
+      if (isTarget) {
+        link.classList.add("active");
+        link.setAttribute("aria-current", "page");
+      } else {
+        link.classList.remove("active");
+        link.removeAttribute("aria-current");
+      }
+    });
+  }
+
+  // 3. Ombre sur la barre de navigation + lien actif au défilement (ScrollSpy précis)
   function onScroll() {
     if (window.scrollY > 20) {
       header.classList.add("scrolled");
@@ -35,27 +70,88 @@ document.addEventListener("DOMContentLoaded", function () {
       header.classList.remove("scrolled");
     }
 
-    const scrollPosition = window.scrollY + 140;
+    // Si on est en bas de page, activer le dernier lien (Contact)
+    const isAtBottom =
+      window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 60;
+    if (isAtBottom && sections.length > 0) {
+      const lastSection = sections[sections.length - 1];
+      setActiveLink(lastSection.getAttribute("id"));
+      return;
+    }
+
+    // Si on est en haut de page, activer Accueil
+    if (window.scrollY < 80) {
+      setActiveLink("accueil");
+      return;
+    }
+
+    const scrollPosition = window.scrollY + 160;
+    let currentId = "accueil";
+
     sections.forEach((section) => {
       const top = section.offsetTop;
       const height = section.offsetHeight;
-      const id = section.getAttribute("id");
-
       if (scrollPosition >= top && scrollPosition < top + height) {
-        navLinks.forEach((link) => {
-          link.classList.remove("active");
-          if (link.getAttribute("href") === `#${id}`) {
-            link.classList.add("active");
-          }
-        });
+        currentId = section.getAttribute("id");
       }
     });
+
+    setActiveLink(currentId);
   }
 
-  window.addEventListener("scroll", onScroll);
+  window.addEventListener("scroll", onScroll, { passive: true });
   onScroll();
 
-  // 3. Envoi du formulaire de contact via mailto pré-rempli
+  navLinks.forEach((link) => {
+    link.addEventListener("click", function () {
+      const href = this.getAttribute("href");
+      if (href && href.startsWith("#")) {
+        const targetId = href.substring(1);
+        setActiveLink(targetId);
+      }
+    });
+  });
+
+  // 4. Chargement dynamique au défilement (Reveal on Scroll pro & 60fps)
+  const revealElements = document.querySelectorAll(".reveal-on-scroll");
+
+  function revealElement(el) {
+    el.classList.add("is-revealed");
+    const langBar = el.querySelector(".lang-progress-bar");
+    if (langBar && langBar.dataset.width) {
+      langBar.style.width = langBar.dataset.width;
+    }
+  }
+
+  if ("IntersectionObserver" in window) {
+    const revealObserver = new IntersectionObserver(
+      (entries, observer) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            revealElement(entry.target);
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      {
+        threshold: 0.12,
+        rootMargin: "0px 0px -40px 0px"
+      }
+    );
+
+    revealElements.forEach((el) => {
+      const rect = el.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        revealElement(el);
+      } else {
+        revealObserver.observe(el);
+      }
+    });
+  } else {
+    revealElements.forEach(revealElement);
+  }
+
+  // 5. Envoi du formulaire de contact via mailto pré-rempli
   if (contactForm) {
     contactForm.addEventListener("submit", function (e) {
       e.preventDefault();
@@ -65,9 +161,10 @@ document.addEventListener("DOMContentLoaded", function () {
       const message = document.getElementById("contactMessage").value.trim();
 
       const body = `Bonjour El Hadji Malick,\n\n${message}\n\n---\nDe : ${name} (${email})`;
-      const mailtoUrl = `mailto:ehmalick.sy1@univ-thies.sn?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+      const mailtoUrl = `mailto:ehmalick.sy1@univ-thies.sn?subject=${encodeURIComponent(
+        subject
+      )}&body=${encodeURIComponent(body)}`;
       window.location.href = mailtoUrl;
     });
   }
 });
-

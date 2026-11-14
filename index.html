@@ -8,6 +8,9 @@
     content="Portfolio professionnel d'El Hadji Malick SY — Étudiant en Licence 3 Informatique (Génie Logiciel) à l'UIDT de Thiès. Développement Full Stack (Java, Spring Boot, Python/Django, React, Angular), Intelligence Artificielle & Cybersécurité.">
   <title>El Hadji Malick SY | Portfolio — Génie Logiciel, Full Stack, IA & Cybersécurité</title>
 
+  <!-- Favicon officiel vectoriel -->
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+
   <!-- Google Fonts : Plus Jakarta Sans & Inter -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,9 +50,9 @@
         <li><a href="#a-propos" class="nav-link-item">À propos</a></li>
         <li><a href="#competences" class="nav-link-item">Compétences</a></li>
         <li><a href="#projets" class="nav-link-item">Projets</a></li>
-        <li><a href="#contact" class="nav-link-item nav-btn-contact">Contact</a></li>
         <li><a href="#parcours" class="nav-link-item">Parcours</a></li>
         <li><a href="#certifications" class="nav-link-item">Certifications</a></li>
+        <li><a href="#contact" class="nav-link-item">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -112,7 +115,7 @@
     <!-- ==================== 2. SECTION À PROPOS ==================== -->
     <section id="a-propos" class="section-padding">
       <div class="container">
-        <div class="section-header text-center mb-5">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
           <span class="section-eyebrow">DÉCOUVREZ MON PROFIL</span>
           <h2 class="section-title">À propos de moi</h2>
           <div class="section-divider mx-auto"></div>
@@ -120,7 +123,7 @@
 
         <div class="row gy-5 align-items-start">
           <!-- Texte de présentation à gauche -->
-          <div class="col-lg-6">
+          <div class="col-lg-6 reveal-on-scroll">
             <h3 class="about-heading mb-4">
               Développement Full Stack, intelligence artificielle et solutions logicielles modernes
             </h3>
@@ -145,15 +148,11 @@
             </p>
 
             <div class="d-flex flex-wrap gap-3 pt-2">
-              <a href="projet-cv/index.html" target="_blank" class="btn-about-pill btn-about-dark">
-                <i class="bi bi-eye me-2"></i>Voir mon CV
-              </a>
               <a href="projet-cv/index.html?print=1" target="_blank" class="btn-about-pill btn-about-purple">
                 <i class="bi bi-printer me-2"></i>Version Imprimable
               </a>
-              <a href="https://github.com/elmalick25" target="_blank" rel="noopener noreferrer"
-                class="btn-about-pill btn-about-outline">
-                <i class="bi bi-github me-2"></i>GitHub
+              <a href="#contact" class="btn-about-pill btn-about-outline">
+                <i class="bi bi-chat-dots-fill me-2"></i>Me contacter
               </a>
             </div>
           </div>
@@ -162,7 +161,7 @@
           <div class="col-lg-6">
             <div class="row g-4">
               <div class="col-sm-6">
-                <div class="info-card h-100">
+                <div class="info-card h-100 reveal-on-scroll reveal-delay-1">
                   <div class="icon-box-purple mb-3">
                     <i class="bi bi-mortarboard-fill"></i>
                   </div>
@@ -174,7 +173,7 @@
               </div>
 
               <div class="col-sm-6">
-                <div class="info-card h-100">
+                <div class="info-card h-100 reveal-on-scroll reveal-delay-2">
                   <div class="icon-box-purple mb-3">
                     <i class="bi bi-code-square"></i>
                   </div>
@@ -186,7 +185,7 @@
               </div>
 
               <div class="col-sm-6">
-                <div class="info-card h-100">
+                <div class="info-card h-100 reveal-on-scroll reveal-delay-3">
                   <div class="icon-box-purple mb-3">
                     <i class="bi bi-cpu-fill"></i>
                   </div>
@@ -198,7 +197,7 @@
               </div>
 
               <div class="col-sm-6">
-                <div class="info-card h-100">
+                <div class="info-card h-100 reveal-on-scroll reveal-delay-4">
                   <div class="icon-box-purple mb-3">
                     <i class="bi bi-bullseye"></i>
                   </div>
@@ -217,7 +216,7 @@
     <!-- ==================== 3. SECTION COMPÉTENCES TECHNIQUES ==================== -->
     <section id="competences" class="section-padding">
       <div class="container">
-        <div class="section-header text-center mb-5">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
           <h2 class="section-title">Mes compétences techniques</h2>
           <div class="section-divider mx-auto"></div>
           <p class="section-subtitle mt-3 mx-auto">
@@ -229,7 +228,7 @@
         <div class="row g-4">
           <!-- 1. Frontend -->
           <div class="col-lg-6">
-            <div class="skill-card h-100">
+            <div class="skill-card h-100 reveal-on-scroll reveal-delay-1">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-code-slash"></i>
@@ -254,7 +253,7 @@
 
           <!-- 2. Backend -->
           <div class="col-lg-6">
-            <div class="skill-card h-100">
+            <div class="skill-card h-100 reveal-on-scroll reveal-delay-2">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-hdd-stack-fill"></i>
@@ -279,7 +278,7 @@
 
           <!-- 3. Bases de données -->
           <div class="col-lg-6">
-            <div class="skill-card h-100">
+            <div class="skill-card h-100 reveal-on-scroll reveal-delay-1">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-database-fill"></i>
@@ -304,7 +303,7 @@
 
           <!-- 4. Intelligence artificielle & Temps Réel -->
           <div class="col-lg-6">
-            <div class="skill-card h-100">
+            <div class="skill-card h-100 reveal-on-scroll reveal-delay-2">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-stars"></i>
@@ -328,7 +327,7 @@
 
           <!-- 5. Cybersécurité, Cloud & Outils -->
           <div class="col-lg-6">
-            <div class="skill-card h-100">
+            <div class="skill-card h-100 reveal-on-scroll reveal-delay-1">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-shield-check"></i>
@@ -353,7 +352,7 @@
 
           <!-- 6. Architecture & Méthodologies -->
           <div class="col-lg-6">
-            <div class="skill-card h-100">
+            <div class="skill-card h-100 reveal-on-scroll reveal-delay-2">
               <div class="d-flex align-items-center gap-3 mb-2">
                 <div class="icon-box-purple">
                   <i class="bi bi-layers-fill"></i>
@@ -379,7 +378,7 @@
     <!-- ==================== 4. SECTION PROJETS ==================== -->
     <section id="projets" class="section-padding">
       <div class="container">
-        <div class="section-header text-center mb-5">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
           <span class="section-eyebrow">PORTFOLIO TECHNIQUE</span>
           <h2 class="section-title">Mes projets &amp; réalisations</h2>
           <div class="section-divider mx-auto"></div>
@@ -392,7 +391,7 @@
         <div class="row g-4">
           <!-- Projet 1 : MémoMaître -->
           <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100">
+            <article class="project-card h-100 reveal-on-scroll reveal-delay-1">
               <div class="project-ribbon">PRINCIPAL</div>
               <div class="icon-box-purple mb-3">
                 <i class="bi bi-brilliance"></i>
@@ -431,7 +430,7 @@
 
           <!-- Projet 2 : SenSanté -->
           <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100">
+            <article class="project-card h-100 reveal-on-scroll reveal-delay-2">
               <div class="project-ribbon">PRINCIPAL</div>
               <div class="icon-box-purple mb-3">
                 <i class="bi bi-heart-pulse-fill"></i>
@@ -466,7 +465,7 @@
 
           <!-- Projet 3 : SyLOC-T -->
           <div class="col-lg-4 col-md-6">
-            <article class="project-card h-100">
+            <article class="project-card h-100 reveal-on-scroll reveal-delay-3">
               <div class="project-ribbon">ÉQUIPE</div>
               <div class="icon-box-purple mb-3">
                 <i class="bi bi-building-fill-check"></i>
@@ -499,7 +498,7 @@
 
           <!-- Projet 4 : Jumelage Promos UIDT -->
           <div class="col-lg-6 col-md-6">
-            <article class="project-card h-100">
+            <article class="project-card h-100 reveal-on-scroll reveal-delay-1">
               <div class="icon-box-purple mb-3">
                 <i class="bi bi-people-fill"></i>
               </div>
@@ -529,7 +528,7 @@
 
           <!-- Projet 5 : Assemblée Nationale SN -->
           <div class="col-lg-6 col-md-12">
-            <article class="project-card h-100">
+            <article class="project-card h-100 reveal-on-scroll reveal-delay-2">
               <div class="icon-box-purple mb-3">
                 <i class="bi bi-bank2"></i>
               </div>
@@ -564,7 +563,7 @@
     <!-- ==================== 5. SECTION PARCOURS (PROJETS & FORMATION) ==================== -->
     <section id="parcours" class="section-padding">
       <div class="container">
-        <div class="section-header text-center mb-5">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
           <span class="section-eyebrow">PARCOURS &amp; EXPÉRIENCE PRATIQUE</span>
           <h2 class="section-title">Réalisations et formation</h2>
           <div class="section-divider mx-auto"></div>
@@ -573,7 +572,7 @@
         <div class="row gy-5">
           <!-- Colonne gauche : Projets & Réalisations pratiques -->
           <div class="col-lg-6">
-            <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3 mb-4 reveal-on-scroll">
               <div class="icon-box-purple">
                 <i class="bi bi-briefcase-fill"></i>
               </div>
@@ -582,7 +581,7 @@
 
             <div class="timeline-container">
               <!-- Item 1 : MémoMaître -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -607,7 +606,7 @@
               </div>
 
               <!-- Item 2 : SyLOC-T -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -631,7 +630,7 @@
               </div>
 
               <!-- Item 3 : SenSanté -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -654,7 +653,7 @@
               </div>
 
               <!-- Item 4 : Jumelage UIDT -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -678,7 +677,7 @@
 
           <!-- Colonne droite : Formation Académique -->
           <div class="col-lg-6">
-            <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3 mb-4 reveal-on-scroll">
               <div class="icon-box-purple">
                 <i class="bi bi-mortarboard-fill"></i>
               </div>
@@ -687,7 +686,7 @@
 
             <div class="timeline-container">
               <!-- Formation 1 : L3 -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -705,7 +704,7 @@
               </div>
 
               <!-- Formation 2 : L2 -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -723,7 +722,7 @@
               </div>
 
               <!-- Formation 3 : L1 -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -741,7 +740,7 @@
               </div>
 
               <!-- Formation 4 : Baccalauréat -->
-              <div class="timeline-item">
+              <div class="timeline-item reveal-on-scroll">
                 <div class="timeline-dot"></div>
                 <div class="timeline-card">
                   <div class="timeline-date">
@@ -766,11 +765,11 @@
     <!-- ==================== 6. SECTION CERTIFICATIONS ET LANGUES ==================== -->
     <section id="certifications" class="section-padding">
       <div class="container">
-        <div class="section-header text-center mb-5">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
           <h2 class="section-title">Certifications et langues</h2>
           <div class="section-divider mx-auto"></div>
           <p class="section-subtitle mt-3 mx-auto">
-            Des parcours de certification ciblés et des compétences linguistiques qui complètent mon profil en
+            Des parcours de certification reconnus et des compétences linguistiques qui complètent mon profil en
             développement logiciel, intelligence artificielle et cybersécurité
           </p>
         </div>
@@ -778,7 +777,7 @@
         <div class="row gy-5">
           <!-- Colonne gauche : Mes certifications -->
           <div class="col-lg-6">
-            <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3 mb-4 reveal-on-scroll">
               <div class="icon-box-purple">
                 <i class="bi bi-award-fill"></i>
               </div>
@@ -786,8 +785,58 @@
             </div>
 
             <div class="d-flex flex-column gap-4">
-              <!-- Certif 1 : Spring Boot & Angular -->
-              <div class="cert-card">
+              <!-- Certif 1 (Obtenue) : Cisco Networking Academy -->
+              <div class="cert-card reveal-on-scroll reveal-delay-1">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cert-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-1">
+                      <h4 class="cert-title mb-0">Introduction to Cybersecurity</h4>
+                      <span class="cert-status-badge">
+                        <i class="bi bi-patch-check-fill me-1"></i>Obtenue · Nov. 2026
+                      </span>
+                    </div>
+                    <p class="cert-issuer mb-2">Cisco Networking Academy — Identifiant Vérifié</p>
+                    <p class="cert-desc mb-3">
+                      Validation des compétences clés en sécurité numérique : compréhension des menaces et vulnérabilités actuelles, bonnes pratiques de protection en ligne et défense des opérations des organisations.
+                    </p>
+                    <a href="I2CSUpdate20261107-20-ykd517.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                      <i class="bi bi-file-earmark-pdf-fill me-1"></i>Consulter le certificat officiel (PDF)
+                      <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certif 2 (Obtenue) : Claude 101 — Anthropic -->
+              <div class="cert-card reveal-on-scroll reveal-delay-2">
+                <div class="d-flex align-items-start gap-3">
+                  <div class="cert-icon">
+                    <i class="bi bi-stars"></i>
+                  </div>
+                  <div class="flex-grow-1">
+                    <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mb-1">
+                      <h4 class="cert-title mb-0">Claude 101</h4>
+                      <span class="cert-status-badge">
+                        <i class="bi bi-patch-check-fill me-1"></i>Obtenue · Certifiée
+                      </span>
+                    </div>
+                    <p class="cert-issuer mb-2">Anthropic — Certificate of Completion</p>
+                    <p class="cert-desc mb-3">
+                      Maîtrise des fondamentaux de l'intelligence artificielle générative avec Claude (Anthropic) : ingénierie de prompts avancée, raisonnement structuré, intégration de modèles LLM et bonnes pratiques d'utilisation responsable.
+                    </p>
+                    <a href="certificate-xdiydw8fm8iw-1781238603.pdf" target="_blank" rel="noopener noreferrer" class="btn-cert-pdf">
+                      <i class="bi bi-file-earmark-pdf-fill me-1"></i>Consulter le certificat officiel (PDF)
+                      <i class="bi bi-box-arrow-up-right ms-1 small"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Certif 2 : Spring Boot & Angular -->
+              <div class="cert-card reveal-on-scroll reveal-delay-2">
                 <div class="d-flex align-items-start gap-3">
                   <div class="cert-icon">
                     <i class="bi bi-layers-half"></i>
@@ -807,8 +856,8 @@
                 </div>
               </div>
 
-              <!-- Certif 2 : Analyst SOC Junior -->
-              <div class="cert-card">
+              <!-- Certif 3 : Analyst SOC Junior -->
+              <div class="cert-card reveal-on-scroll reveal-delay-3">
                 <div class="d-flex align-items-start gap-3">
                   <div class="cert-icon">
                     <i class="bi bi-shield-shaded"></i>
@@ -831,7 +880,7 @@
 
           <!-- Colonne droite : Langues -->
           <div class="col-lg-6">
-            <div class="d-flex align-items-center gap-3 mb-4">
+            <div class="d-flex align-items-center gap-3 mb-4 reveal-on-scroll">
               <div class="icon-box-purple">
                 <i class="bi bi-translate"></i>
               </div>
@@ -840,7 +889,7 @@
 
             <div class="d-flex flex-column gap-3">
               <!-- Wolof -->
-              <div class="lang-card">
+              <div class="lang-card reveal-on-scroll reveal-delay-1">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <div>
                     <span class="lang-code me-2">SN</span>
@@ -849,12 +898,12 @@
                   <span class="lang-level">Langue maternelle</span>
                 </div>
                 <div class="lang-progress">
-                  <div class="lang-progress-bar" style="width: 100%;"></div>
+                  <div class="lang-progress-bar" data-width="100%" style="--target-width: 100%;"></div>
                 </div>
               </div>
 
               <!-- Français -->
-              <div class="lang-card">
+              <div class="lang-card reveal-on-scroll reveal-delay-2">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <div>
                     <span class="lang-code me-2">FR</span>
@@ -863,12 +912,12 @@
                   <span class="lang-level">Courant &amp; Académique</span>
                 </div>
                 <div class="lang-progress">
-                  <div class="lang-progress-bar" style="width: 85%;"></div>
+                  <div class="lang-progress-bar" data-width="85%" style="--target-width: 85%;"></div>
                 </div>
               </div>
 
               <!-- Anglais -->
-              <div class="lang-card">
+              <div class="lang-card reveal-on-scroll reveal-delay-3">
                 <div class="d-flex justify-content-between align-items-center mb-2">
                   <div>
                     <span class="lang-code me-2">EN</span>
@@ -877,7 +926,7 @@
                   <span class="lang-level">Technique &amp; Intermédiaire</span>
                 </div>
                 <div class="lang-progress">
-                  <div class="lang-progress-bar" style="width: 60%;"></div>
+                  <div class="lang-progress-bar" data-width="60%" style="--target-width: 60%;"></div>
                 </div>
               </div>
             </div>
@@ -889,7 +938,7 @@
     <!-- ==================== 7. SECTION CONTACT ==================== -->
     <section id="contact" class="section-padding">
       <div class="container">
-        <div class="section-header text-center mb-5">
+        <div class="section-header text-center mb-5 reveal-on-scroll">
           <span class="section-eyebrow">TRAVAILLONS ENSEMBLE</span>
           <h2 class="section-title">Contactez-moi</h2>
           <div class="section-divider mx-auto"></div>
@@ -902,7 +951,7 @@
         <div class="row g-4 align-items-stretch">
           <!-- Carte violette à gauche -->
           <div class="col-lg-5">
-            <div class="contact-info-panel h-100 d-flex flex-column justify-content-between">
+            <div class="contact-info-panel h-100 d-flex flex-column justify-content-between reveal-on-scroll">
               <div>
                 <h3 class="contact-panel-title mb-3">Parlons de votre projet</h3>
                 <p class="contact-panel-desc mb-4">
@@ -969,7 +1018,7 @@
 
           <!-- Formulaire à droite -->
           <div class="col-lg-7">
-            <div class="contact-form-panel h-100">
+            <div class="contact-form-panel h-100 reveal-on-scroll reveal-delay-2">
               <form id="contactForm">
                 <div class="row g-3">
                   <div class="col-md-6">
