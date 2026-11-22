@@ -1078,7 +1078,25 @@ h1, h2, h3, h4, .brand-logo {
 
   .hero-section {
     text-align: center;
-    padding: 3rem 0;
+    min-height: auto;
+    padding: 2rem 0 2.75rem;
+  }
+
+  .hero-avatar-wrapper {
+    width: 156px;
+    height: 156px;
+  }
+
+  .hero-avatar-ring {
+    padding: 6px;
+    box-shadow:
+      0 14px 34px rgba(91, 33, 182, 0.22),
+      0 0 0 8px rgba(139, 92, 246, 0.12);
+  }
+
+  .hero-avatar-img {
+    border-width: 3px;
+    object-position: center top;
   }
 
   .hero-description {
@@ -1092,6 +1110,41 @@ h1, h2, h3, h4, .brand-logo {
 }
 
 @media (max-width: 767.98px) {
+  .hero-section {
+    padding: 1.5rem 0 2.25rem;
+  }
+
+  .hero-badge-pill {
+    display: none;
+  }
+
+  .hero-avatar-wrapper {
+    width: 128px;
+    height: 128px;
+  }
+
+  .hero-avatar-ring {
+    padding: 5px;
+    box-shadow:
+      0 10px 26px rgba(91, 33, 182, 0.2),
+      0 0 0 6px rgba(139, 92, 246, 0.12);
+  }
+
+  .hero-title {
+    margin-bottom: 0.5rem !important;
+  }
+
+  .hero-subtitle {
+    font-size: 0.96rem;
+    margin-bottom: 0.75rem !important;
+  }
+
+  .hero-description {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    margin-bottom: 1.25rem !important;
+  }
+
   .contact-info-panel,
   .contact-form-panel {
     padding: 1.5rem;
@@ -1166,8 +1219,8 @@ h1, h2, h3, h4, .brand-logo {
 
 @media (max-width: 360px) {
   .hero-avatar-wrapper {
-    width: 200px;
-    height: 200px;
+    width: 112px;
+    height: 112px;
   }
 
   .contact-item-box {

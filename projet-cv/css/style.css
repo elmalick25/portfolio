@@ -351,6 +351,74 @@ main.cv-sheet {
   color: var(--purple-600);
 }
 
+/* Bloc Portfolio QR Code & Bouton GitHub (Colonne gauche) */
+.qr-portfolio-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(139, 92, 246, 0.25);
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(76, 29, 149, 0.08);
+  min-width: 0;
+  max-width: 100%;
+}
+
+.qr-code-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 4px;
+  background: #ffffff;
+  border-radius: 10px;
+  border: 1px solid var(--purple-100);
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease;
+}
+
+.qr-code-link:hover,
+.qr-code-link:focus-visible {
+  transform: scale(1.03);
+  border-color: var(--purple-400);
+  outline: 2px solid var(--purple-500);
+  outline-offset: 2px;
+}
+
+.qr-code-img {
+  display: block;
+  width: 84px;
+  height: 84px;
+  max-width: 100%;
+}
+
+.qr-portfolio-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  min-width: 0;
+}
+
+.qr-portfolio-title {
+  font-size: 0.84rem;
+  font-weight: 700;
+  color: var(--purple-900);
+  line-height: 1.25;
+}
+
+.qr-portfolio-hint {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+}
+
+.sidebar-github-btn {
+  width: 100%;
+  justify-content: center;
+  margin-top: 10px;
+  padding: 9px 16px;
+}
+
 /* ==================== COLONNE DROITE (CONTENU PRINCIPAL) ==================== */
 .col_droite {
   background-color: #ffffff;
@@ -636,12 +704,16 @@ main.cv-sheet {
   border: 1px solid var(--purple-200);
 }
 
-/* Pied de page interactif (écran uniquement) */
+/* Liens rapides icônes (colonne gauche, écran & PDF cliquable) */
 #contact-us {
-  text-align: center;
-  margin-top: 18px;
-  padding-top: 14px;
-  border-top: 1px solid var(--purple-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(109, 40, 217, 0.14);
 }
 
 #contact-us a {
@@ -650,13 +722,13 @@ main.cv-sheet {
   align-items: center;
   width: 38px;
   height: 38px;
-  background: var(--purple-50);
-  border: 1.5px solid var(--purple-200);
-  border-radius: 50px;
-  font-size: 17px;
+  background: rgba(255, 255, 255, 0.9);
+  border: 1.5px solid rgba(139, 92, 246, 0.28);
+  border-radius: 50%;
+  font-size: 16px;
   color: var(--purple-700);
   text-decoration: none;
-  margin: 6px 8px;
+  margin: 0;
   transition: all 0.25s ease;
 }
 
@@ -748,15 +820,16 @@ main.cv-sheet {
   }
 
   #contact-us {
-    margin-top: 10px !important;
-    padding-top: 8px !important;
+    margin-top: 8px !important;
+    padding-top: 7px !important;
+    gap: 7px !important;
   }
 
   #contact-us a {
     width: 28px !important;
     height: 28px !important;
     font-size: 13px !important;
-    margin: 2px 5px !important;
+    margin: 0 !important;
   }
 
   .conteneur {
@@ -808,6 +881,32 @@ main.cv-sheet {
   .sidebar-section {
     margin-top: 11px !important;
     padding-top: 9px !important;
+  }
+
+  .qr-portfolio-card {
+    padding: 7px !important;
+    gap: 8px !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+
+  .qr-code-img {
+    width: 72px !important;
+    height: 72px !important;
+  }
+
+  .qr-portfolio-title {
+    font-size: 0.78rem !important;
+  }
+
+  .qr-portfolio-hint {
+    font-size: 0.68rem !important;
+  }
+
+  .sidebar-github-btn {
+    margin-top: 7px !important;
+    padding: 6px 12px !important;
+    font-size: 0.76rem !important;
   }
 
   #section1,

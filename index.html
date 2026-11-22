@@ -29,7 +29,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
 
   <!-- Feuille de style du Portfolio -->
-  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/portfolio.css?v=20261122">
 </head>
 
 <body>
@@ -61,9 +61,9 @@
     <!-- ==================== 1. SECTION HERO ==================== -->
     <section id="accueil" class="hero-section d-flex align-items-center">
       <div class="container">
-        <div class="row align-items-center gy-5">
+        <div class="row align-items-center gy-4 gy-lg-5">
           <!-- Colonne texte -->
-          <div class="col-lg-7">
+          <div class="col-lg-7 order-2 order-lg-1">
             <div class="hero-badge-pill mb-3">
               Bienvenue sur mon portfolio
             </div>
@@ -102,7 +102,7 @@
           </div>
 
           <!-- Colonne photo -->
-          <div class="col-lg-5 text-center">
+          <div class="col-lg-5 text-center order-1 order-lg-2">
             <div class="hero-avatar-wrapper mx-auto">
               <div class="hero-avatar-ring">
                 <img src="images/unnamed.jpg" alt="Photo de profil d'El Hadji Malick SY" class="hero-avatar-img">
@@ -141,26 +141,18 @@
                 Angular, PostgreSQL / MySQL</strong>) et de l'IA générative (certifié <strong>Claude 101 —
                 Anthropic</strong>).
             </p>
-            <p class="about-text mb-4">
+            <p class="about-text mb-0">
               J'ai notamment conçu <strong>SenSanté</strong>, un système d'information médical sécurisé par JWT sous
               Spring Boot, <strong>MémoMaître</strong>, une plateforme PWA <em>Offline-First</em> intégrant l'algorithme
               cognitif FSRS v4 et un coach vocal IA temps réel, et contribué au backend de <strong>SyLOC-T</strong> pour
               le CROUS de Thiès. Rigueur, autonomie et esprit d'équipe guident ma démarche vers un <strong>Master en
                 Cybersécurité / Informatique</strong>.
             </p>
-
-            <div class="d-flex flex-wrap gap-3 pt-2">
-              <a href="projet-cv/index.html?print=1" target="_blank" class="btn-about-pill btn-about-purple">
-                <i class="bi bi-printer me-2"></i>Version Imprimable
-              </a>
-              <a href="#contact" class="btn-about-pill btn-about-outline">
-                <i class="bi bi-chat-dots-fill me-2"></i>Me contacter
-              </a>
-            </div>
           </div>
 
           <!-- Grille 2x2 de cartes à droite -->
           <div class="col-lg-6">
+            <h3 class="about-heading text-center d-lg-none mb-4 reveal-on-scroll">Spécialités &amp; Trajectoire</h3>
             <div class="row g-4">
               <div class="col-sm-6">
                 <div class="info-card h-100 reveal-on-scroll reveal-delay-1">
