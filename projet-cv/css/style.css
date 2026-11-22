@@ -297,6 +297,14 @@ h4,
   flex-direction: row !important;
 }
 
+.cv-export-stage #section1,
+.cv-export-stage #section3,
+.cv-export-stage #section5,
+.cv-export-stage #section6,
+.cv-export-stage .cv-section-title {
+  background: #ede9fe !important;
+}
+
 /* ==================== FEUILLE PRINCIPALE DU CV ==================== */
 main.cv-sheet {
   max-width: 1040px;
@@ -649,7 +657,7 @@ main.cv-sheet {
   display: flex;
   align-items: center;
   gap: 10px;
-  background: linear-gradient(90deg, var(--purple-100) 0%, rgba(237, 233, 254, 0.35) 100%);
+  background: linear-gradient(90deg, #ede9fe 0%, #f9f7ff 100%);
   border-left: 4px solid var(--purple-600);
   color: var(--purple-900);
   font-size: 0.92rem !important;
@@ -1089,6 +1097,7 @@ main.cv-sheet {
   #section3,
   #section5,
   #section6 {
+    background: #ede9fe !important;
     margin-top: 10px !important;
     margin-bottom: 7px !important;
     padding: 5px 10px !important;
