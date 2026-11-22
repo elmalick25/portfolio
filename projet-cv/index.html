@@ -16,17 +16,18 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-    rel="stylesheet">
+    rel="stylesheet" crossorigin="anonymous">
 
   <!-- Lien vers Bootstrap 5 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
   <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    crossorigin="anonymous">
 
   <!-- Feuille de style personnelle -->
-  <link rel="stylesheet" href="css/style.css?v=20261122">
+  <link rel="stylesheet" href="css/style.css?v=20261122b">
 </head>
 
 <body>
@@ -39,9 +40,39 @@
       </a>
     </div>
     <div class="d-flex align-items-center gap-2 flex-wrap">
-      <button type="button" id="btn-print-cv" class="btn-cv-action btn-cv-primary">
-        <i class="bi bi-printer-fill"></i>Imprimer / Exporter en PDF
-      </button>
+      <div class="cv-download-dropdown" id="cv-download-dropdown">
+        <button type="button" id="btn-download-menu" class="btn-cv-action btn-cv-primary"
+          aria-haspopup="menu" aria-expanded="false" aria-controls="download-menu">
+          <i class="bi bi-download"></i>
+          <span class="btn-download-label">Télécharger le CV</span>
+          <i class="bi bi-chevron-down cv-chevron"></i>
+        </button>
+        <div id="download-menu" class="cv-download-menu" role="menu" aria-labelledby="btn-download-menu" hidden>
+          <button type="button" class="cv-download-option" role="menuitem" data-export="png">
+            <span class="cv-option-icon"><i class="bi bi-filetype-png"></i></span>
+            <span class="cv-option-text">
+              <strong>Image PNG (Haute Définition)</strong>
+              <small>Netteté maximale • Idéal pour le QR code</small>
+            </span>
+          </button>
+          <button type="button" class="cv-download-option" role="menuitem" data-export="jpeg">
+            <span class="cv-option-icon"><i class="bi bi-filetype-jpg"></i></span>
+            <span class="cv-option-text">
+              <strong>Image JPEG (Haute Qualité)</strong>
+              <small>Format léger et haute résolution</small>
+            </span>
+          </button>
+          <div class="cv-download-divider" role="separator"></div>
+          <button type="button" id="btn-print-cv" class="cv-download-option" role="menuitem">
+            <span class="cv-option-icon"><i class="bi bi-filetype-pdf"></i></span>
+            <span class="cv-option-text">
+              <strong>Exporter en PDF / Imprimer</strong>
+              <small>Mise en page A4 vectorielle</small>
+            </span>
+          </button>
+        </div>
+      </div>
+      <span id="cv-export-status" class="cv-export-status" role="status" aria-live="polite" hidden></span>
     </div>
   </header>
 
@@ -510,7 +541,8 @@
     </div>
   </main>
 
-  <script src="JS/cv.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/html-to-image@1.11.11/dist/html-to-image.js" crossorigin="anonymous"></script>
+  <script src="JS/cv.js?v=20261122"></script>
 </body>
 
 </html>

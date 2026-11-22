@@ -127,6 +127,176 @@ h4,
   border: 1px solid var(--purple-200);
 }
 
+/* Menu déroulant de téléchargement (PNG HD / JPEG / PDF) */
+.cv-toolbar {
+  position: relative;
+  z-index: 50;
+}
+
+.cv-download-dropdown {
+  position: relative;
+  display: inline-flex;
+}
+
+.cv-chevron {
+  font-size: 0.78rem;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+#btn-download-menu[aria-expanded="true"] .cv-chevron {
+  transform: rotate(180deg);
+}
+
+#btn-download-menu:disabled {
+  opacity: 0.75;
+  cursor: wait;
+  transform: none;
+}
+
+.cv-download-menu {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  min-width: 280px;
+  max-width: calc(100vw - 32px);
+  background: #ffffff;
+  border: 1px solid rgba(139, 92, 246, 0.24);
+  border-radius: 16px;
+  padding: 6px;
+  box-shadow: 0 18px 40px rgba(30, 27, 75, 0.16), 0 4px 12px rgba(91, 33, 182, 0.08);
+  z-index: 100;
+}
+
+.cv-download-option {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 10px 12px;
+  border: none;
+  border-radius: 11px;
+  background: transparent;
+  color: var(--text-dark);
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.18s ease, color 0.18s ease;
+}
+
+.cv-download-option:hover,
+.cv-download-option:focus-visible {
+  background: var(--purple-50);
+  color: var(--purple-900);
+  outline: none;
+}
+
+.cv-download-option:focus-visible {
+  box-shadow: inset 0 0 0 2px var(--purple-500);
+}
+
+.cv-option-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
+  background: var(--purple-100);
+  color: var(--purple-700);
+  font-size: 1.05rem;
+  flex-shrink: 0;
+}
+
+.cv-option-text {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.cv-option-text strong {
+  font-size: 0.86rem;
+  font-weight: 700;
+  color: var(--purple-950);
+  line-height: 1.25;
+}
+
+.cv-option-text small {
+  font-size: 0.74rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+}
+
+.cv-download-divider {
+  height: 1px;
+  background: var(--purple-100);
+  margin: 5px 8px;
+}
+
+.cv-export-status {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--purple-800);
+  background: var(--purple-100);
+  border: 1px solid var(--purple-200);
+  padding: 6px 12px;
+  border-radius: 50px;
+}
+
+.cv-export-status.is-error {
+  color: #991b1b;
+  background: #fee2e2;
+  border-color: #fecaca;
+}
+
+/* Mode capture image HD (clone hors-écran : garantit toujours le format CV 2 colonnes net même depuis mobile) */
+.cv-export-stage {
+  position: fixed;
+  left: -99999px;
+  top: 0;
+  width: 1040px;
+  z-index: -1;
+  pointer-events: none;
+  background: #ffffff;
+}
+
+.cv-export-stage main.cv-sheet {
+  width: 1040px !important;
+  max-width: 1040px !important;
+  margin: 0 !important;
+  border: none !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+}
+
+.cv-export-stage main.cv-sheet > .row {
+  display: flex !important;
+  flex-direction: row !important;
+  flex-wrap: nowrap !important;
+}
+
+.cv-export-stage .col_gauche {
+  width: 33.3333% !important;
+  flex: 0 0 33.3333% !important;
+  max-width: 33.3333% !important;
+  border-right: 1px solid rgba(139, 92, 246, 0.22) !important;
+  border-bottom: none !important;
+  padding: 28px 24px !important;
+}
+
+.cv-export-stage .col_droite {
+  width: 66.6667% !important;
+  flex: 0 0 66.6667% !important;
+  max-width: 66.6667% !important;
+  padding: 30px 32px !important;
+}
+
+.cv-export-stage .skills-matrix {
+  grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+}
+
+.cv-export-stage .cert-entry {
+  flex-direction: row !important;
+}
+
 /* ==================== FEUILLE PRINCIPALE DU CV ==================== */
 main.cv-sheet {
   max-width: 1040px;
@@ -775,6 +945,12 @@ main.cv-sheet {
 
   .cv-toolbar {
     padding: 10px 14px;
+  }
+
+  .cv-download-menu {
+    left: 0;
+    right: auto;
+    min-width: 260px;
   }
 
   .col_gauche {
